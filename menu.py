@@ -1,7 +1,7 @@
 import gpxpy
 
 from print_file import print_gpx
-
+from commands import cls
 
 
 def GPX_Menu(gpx_file):
@@ -35,22 +35,22 @@ def GPX_Menu(gpx_file):
 
             while True:
             # Ask the user if they are sure they want to exit
+                cls()
                 print("Exiting the menu are you sure? (all data will be lost!)")
                 print("")
                 print("1. Yes")
                 print("2. No")
 
-                if input()== '1':
+                exit_choice = input("Please select an option (1-2): ")
+
+                if exit_choice == '1':
                     print("Exiting the menu.")
-                    break
-                elif input() == '2':
+                    return
+                elif exit_choice == '2':
                     print("canceled")
-                    continue
+                    break
                 else:
                     print("Invalid selection, please try again.")
                     continue
-            
-            
-            break
         else:
             print("Invalid selection, please try again.")
