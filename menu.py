@@ -2,6 +2,7 @@ import gpxpy
 
 from print_file import print_gpx
 from commands import cls
+from Waypoints import print_points
 
 
 def GPX_Menu(gpx_file):
@@ -22,7 +23,8 @@ def GPX_Menu(gpx_file):
             print_gpx(gpx_file)
             
         elif choice == '2':
-            print("You wanne delete a point.")
+            print("You want to show all waypoints.")
+            print_points(gpx_file)
         elif choice == '3':
             print("You wanne delete a point.")
         elif choice == '4':
@@ -30,9 +32,6 @@ def GPX_Menu(gpx_file):
         elif choice == '5':
             print("You wanne create a track.")
         elif choice == '6':
-            print("You wanne create a route.")
-        elif choice == '7':
-
             while True:
             # Ask the user if they are sure they want to exit
                 cls()
@@ -45,9 +44,11 @@ def GPX_Menu(gpx_file):
 
                 if exit_choice == '1':
                     print("Exiting the menu.")
+                    cls()
                     return
                 elif exit_choice == '2':
                     print("canceled")
+                    cls()
                     break
                 else:
                     print("Invalid selection, please try again.")
