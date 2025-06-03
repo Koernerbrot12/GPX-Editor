@@ -32,9 +32,6 @@ def GPX_Menu(gpx_file):
         elif choice == '5':
             print("You wanne create a track.")
         elif choice == '6':
-            print("You wanne create a route.")
-        elif choice == '7':
-
             while True:
             # Ask the user if they are sure they want to exit
                 cls()
