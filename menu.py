@@ -1,4 +1,4 @@
-import gpxpy
+import os
 
 from print_file import print_gpx
 from commands import cls
@@ -45,7 +45,8 @@ def GPX_Menu(gpx_file):
                     if exit_choice == '1':
                         print("Exiting the menu.")
                         cls()
-                        return
+                        menu_return = True
+                        return menu_return
                     elif exit_choice == '2':
                         print("canceled")
                         cls()
@@ -71,15 +72,31 @@ def save_gpx(file):
                     save_path = input("Enter the path where you want to save the GPX file (default is 'output.gpx'): ")
                     if not save_path:
                         save_path = 'output.gpx'
-
-                    gpx_file_str = file.to_xml()
-                    with open(save_path, 'w') as f:
-                        f.write(gpx_file_str)
-                    print("GPX file saved successfully to {save_path}.")
-                    print("You can now close the program or continue editing.")
-                    input("Press Enter to return to the menu...")
-                    cls()
-                    break
+                    if save_path.endswith('.gpx') or save_path.endswith('.xml'):
+                        gpx_file_str = file.to_xml()
+                        with open(save_path, 'w') as f:
+                            f.write(gpx_file_str)
+                        print(f"GPX file saved successfully to {save_path}.")
+                        print("You can now close the program or continue editing.")
+                        input("Press Enter to return to the menu...")
+                        cls()
+                        break
+                    if not save_path.endswith('.gpx') and not save_path.endswith('.xml'):
+                        dir_path = save_path
+                        if not dir_path.endswith('/') and not dir_path.endswith('\\'):
+                            dir_path += '/'
+                        file_name = input("Enter the name of the GPX file (without extension): ")
+                        if not file_name.endswith('.gpx') and not file_name.endswith('.xml'):
+                            file_name += '.gpx'
+                        full_path = os.path.join(dir_path, file_name)
+                        gpx_file_str = file.to_xml()
+                        with open(full_path, 'w') as f:
+                            f.write(gpx_file_str)
+                        print(f"GPX file saved successfully to {full_path}.")
+                        print("You can now close the program or continue editing.")
+                        input("Press Enter to return to the menu...")
+                        cls()
+                        break
                 elif save_choice == '2':
                     print("Save operation canceled.")
                     cls()
