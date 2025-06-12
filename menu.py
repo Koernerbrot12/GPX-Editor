@@ -4,6 +4,7 @@ from commands import cls
 from Waypoints import waypoints_menu
 from print_file import print_pdf
 from print_file import print_gpx
+from Routes import routes_menu
 
 
 def GPX_Menu(gpx_file):
@@ -30,6 +31,7 @@ def GPX_Menu(gpx_file):
             print("Track menu selected.")
         elif choice == '4':
             print("Route menu selected.")
+            routes_menu(gpx_file)
         elif choice == '5':
             print("You want to save the GPX file.")
             gpx_file = save_gpx(gpx_file)
