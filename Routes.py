@@ -103,3 +103,73 @@ def delete_route(gpx):
    
 
     input("Press Enter to return to the routes menu...")
+
+def update_route(gpx):
+    cls()
+    if not gpx.routes:
+        print("No routes available to update.")
+        input("Press Enter to return to the routes menu...")
+        return
+
+    print("Available Routes:")
+    for route in gpx.routes:
+        print(f"- {route.name}")
+    
+    update_route_name = input("Enter the name of the route you want to update: ")
+    
+    # Find the selected route
+    selected_route = None
+    for route in gpx.routes:
+        if route.name == update_route_name:
+            selected_route = route
+            break
+    
+    if selected_route is None:
+        print(f"Route '{update_route_name}' not found.")
+        input("Press Enter to return to the routes menu...")
+        return
+
+    while True:
+        cls()
+        print(f"Updating Route: {selected_route.name}")
+        print("Update Menu")
+        print("1. Update Route Name")
+        print("2. Update Route Points")
+        print("3. Insert new Route point")
+        print("4. Move Route point")
+        print("5. Delete Route point")
+        print("6. Back to Routes Menu")
+
+        choice = input("Please select an option (1-6): ")
+        if choice == '1':
+            update_route_name(gpx, selected_route)
+        elif choice == '2':
+            update_route_points(gpx, selected_route)
+        elif choice == '3':
+            insert_route_point(gpx, selected_route)
+        elif choice == '4':
+            move_route_point(gpx, selected_route)
+        elif choice == '5':
+            delete_route_point(gpx, selected_route)
+        elif choice == '6':
+            cls()
+            print("Returning to the Routes menu...")
+            return
+        else:
+            print("Invalid selection, please try again.")
+
+def update_route_name(gpx, route):
+    """
+    This function updates the name of a selected route.
+    """
+    cls()
+    print(f"Current route name: {route.name}")
+    new_name = input("Enter the new name for the route (or type 'cancel' to cancel): ")
+    
+    if new_name.lower() == 'cancel':
+        print("Update cancelled.")
+    else:
+        route.name = new_name
+        print(f"Route name updated to '{new_name}' successfully.")
+    
+    input("Press Enter to return to the update menu...")
