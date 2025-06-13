@@ -2,22 +2,18 @@ import gpxpy
 from commands import cls
 
 def waypoints_menu(gpx):
-    
-    """
-    This function displays the waypoints menu and allows the user to interact with waypoints in a GPX file.
-    
-    :param gpx: The GPX data containing waypoints.
-    """
-    cls()
-    print("Waypoints Menu")
-    print("1. Show all waypoints")
-    print("2. Add a waypoint")
-    print("3. Delete a waypoint")
-    print("4. Update a waypoint")
-    print("5. Remove timestamp from waypoint")
-    print("6. Return to main menu")
 
+    # This function displays the waypoints menu and allows the user to manage waypoints in the GPX file.
     while True:
+        # If returning to the waypoints menu, display the menu again
+        cls()
+        print("Waypoints Menu")
+        print("1. Show all waypoints")
+        print("2. Add a waypoint")
+        print("3. Delete a waypoint")
+        print("4. Update a waypoint")
+        print("5. Remove timestamp from waypoint")
+        print("6. Return to main menu")
         choice = input("Please select an option (1-6): ")
         if choice == '1':
             print_points(gpx)
@@ -42,27 +38,30 @@ def waypoints_menu(gpx):
             print("Invalid selection, please try again.")
 
 def print_points(gpx):
-
+     
+     # This function prints all waypoints in the GPX file.
      cls()
-# This function prints all waypoints in the GPX file.
      for waypoint in gpx.waypoints:
          print(f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}")
+            
+        
      if not gpx.waypoints:
+         # Check if there are no waypoints in the GPX file
          print("No waypoints found in the GPX file.")
-         input("Press Enter to return to the waypoints menu...")
-
-     print("\nEnd of waypoints.")
+         
      input("Press Enter to return to the waypoints menu...")
-
+     
 def add_waypoint(gpx):
 
-     """
-     This function allows the user to add a waypoint to the GPX file.
-     
-     :param gpx: The GPX data to which the waypoint will be added.
-     """
+     # This function allows the user to add a new waypoint to the GPX file.
      cls()
      name = input("Enter the name of the waypoint: ")
+     if name == "":
+         print("Name cannot be empty. Please try again.")
+         return
+     if any(waypoint.name == name for waypoint in gpx.waypoints):
+         print(f"A waypoint with the name '{name}' already exists. Please choose a different name.")
+         return
      latitude = float(input("Enter the latitude of the waypoint: "))
      longitude = float(input("Enter the longitude of the waypoint: "))
      elevation = float(input("Enter the elevation of the waypoint (optional, press Enter to skip): ") or 0)
@@ -75,11 +74,7 @@ def add_waypoint(gpx):
 
 def delete_waypoint(gpx):
     
-    """
-    This function allows the user to delete a waypoint from the GPX file.
-    
-    :param gpx: The GPX data from which the waypoint will be deleted.
-    """
+    # This function allows the user to delete a waypoint from the GPX file.
     cls()
     print_points(gpx)
     
@@ -97,11 +92,7 @@ def delete_waypoint(gpx):
 
 def update_waypoint(gpx):
     
-     """
-     This function allows the user to update a waypoint in the GPX file.
-     
-     :param gpx: The GPX data containing waypoints.
-     """
+     # This function allows the user to update a waypoint in the GPX file.
      cls()
      print_points(gpx)
      
@@ -128,13 +119,26 @@ def update_waypoint(gpx):
 
 def remove_timestamp(gpx):
     
+    # This function allows the user to remove timestamps from waypoints in the GPX file.
     cls()
+    print("1. Remove timestamp from a specific waypoint")
+    print("2. Remove timestamp from all waypoints")
 
-    name = input("Enter the name of the waypoint to remove the timestamp from: ")
-    for waypoint in gpx.waypoints:
-        if waypoint.name == name:
+    choice = input("Please select an option (1-2): ")
+
+    if choice == '1':
+        name = input("Enter the name of the waypoint to remove the timestamp from: ")
+        for waypoint in gpx.waypoints:
+            if waypoint.name == name:
+                waypoint.time = None
+                print(f"Timestamp removed from waypoint '{name}'.")
+                break
+        else:
+            print(f"Waypoint '{name}' not found.")
+    elif choice == '2':
+        for waypoint in gpx.waypoints:
             waypoint.time = None
-            print(f"Timestamp removed from waypoint '{name}'.")
-            break
+        print("All Timestamps removed from all waypoints.")
+        print("press Enter to return to the waypoints menu...")
     else:
-        print(f"Waypoint '{name}' not found.")
+        print("Invalid selection, please try again.")

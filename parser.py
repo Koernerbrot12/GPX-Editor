@@ -1,6 +1,7 @@
 import gpxpy
 import os
 
+
 def parser():
 
     gpx_path = input("Enter the path to the GPX file: ")
@@ -24,6 +25,6 @@ def parser():
     
     else:
         print("Invalid file format. Please provide a .gpx or .xml file.")
-        SystemExit
+        parser()
 
         
