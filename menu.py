@@ -62,7 +62,8 @@ def GPX_Menu(gpx_file):
                     if exit_choice == '1':
                         print("Exiting the menu.")
                         cls()
-                        return
+                        menu_return = True
+                        return menu_return
                     elif exit_choice == '2':
                         print("canceled")
                         cls()
