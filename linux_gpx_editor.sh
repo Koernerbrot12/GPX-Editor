@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Satrt GPX Editor"
-if [" -d "./venv"]; then
+if [ ! -d "./venv" ]; then
     echo"install virtual python enviroment"
     python3 -m venv ./venv
 fi
