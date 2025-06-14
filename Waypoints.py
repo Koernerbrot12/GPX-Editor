@@ -158,7 +158,7 @@ def update_waypoint(gpx):
                waypoint.elevation = new_elevation
 
                # Ask y/n to see further details to update
-               print("Do you want to update additional details for this waypoint? (y/n)")
+               print("Do you want to update additional details for this waypoint?")
                additional_details = input("Please select an option (y/n): ").lower()
                if additional_details == 'y':
                    print("1. Timestamp")
