@@ -37,19 +37,66 @@ def waypoints_menu(gpx):
         else:
             print("Invalid selection, please try again.")
 
+def print_only_points(gpx):
+    cls()
+    for waypoint in gpx.waypoints:
+        print(f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}")
+           
+    
+    if not gpx.waypoints:
+        # Check if there are no waypoints in the GPX file
+        print("No waypoints found in the GPX file.")
+
+
 def print_points(gpx):
-     
-     # This function prints all waypoints in the GPX file.
-     cls()
-     for waypoint in gpx.waypoints:
-         print(f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}")
-            
-        
-     if not gpx.waypoints:
-         # Check if there are no waypoints in the GPX file
-         print("No waypoints found in the GPX file.")
-         
-     input("Press Enter to return to the waypoints menu...")
+    # This function prints all waypoints in the GPX file.
+    cls()
+    for waypoint in gpx.waypoints:
+        print(f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}")
+
+    if not gpx.waypoints:
+        # Check if there are no waypoints in the GPX file
+        print("No waypoints found in the GPX file.")
+
+    # Ask user if all information to a specific waypoint should be printed
+    print("\nDo you want to see all information for a specific waypoint?")
+    choice = input("Please select an option (y/n): ").lower()
+    if choice == 'y':
+        name = input("Enter the name of the waypoint: ")
+        for waypoint in gpx.waypoints:
+            if waypoint.name == name:
+                # print all attributes of the waypoint
+                print(f"{'Name:':20} {waypoint.name if waypoint.name else 'None'}")
+                print(f"{'Latitude:':20} {waypoint.latitude if waypoint.latitude is not None else 'None'}")
+                print(f"{'Longitude:':20} {waypoint.longitude if waypoint.longitude is not None else 'None'}")
+                print(f"{'Elevation:':20} {waypoint.elevation if waypoint.elevation is not None else 'None'}")
+                print(f"{'Timestamp:':20} {waypoint.time if waypoint.time else 'None'}")
+                print(f"{'Magvar:':20} {waypoint.magnetic_variation if waypoint.magnetic_variation is not None else 'None'}")
+                print(f"{'Geoid Height:':20} {waypoint.geoid_height if waypoint.geoid_height is not None else 'None'}")
+                print(f"{'Comment:':20} {waypoint.comment if waypoint.comment else 'None'}")
+                print(f"{'Description:':20} {waypoint.description if waypoint.description else 'None'}")
+                print(f"{'Source:':20} {waypoint.source if waypoint.source else 'None'}")
+                print(f"{'Link:':20} {waypoint.link if waypoint.link else 'None'}")
+                print(f"{'Symbol:':20} {waypoint.symbol if waypoint.symbol else 'None'}")
+                print(f"{'Type:':20} {waypoint.type if waypoint.type else 'None'}")
+                print(f"{'Fix:':20} {waypoint.type_of_gpx_fix if waypoint.type_of_gpx_fix else 'None'}")
+                print(f"{'Satellite:':20} {waypoint.satellites if waypoint.satellites is not None else 'None'}")
+                print(f"{'Hdop:':20} {waypoint.horizontal_dilution if waypoint.horizontal_dilution is not None else 'None'}")
+                print(f"{'Vdop:':20} {waypoint.vertical_dilution if waypoint.vertical_dilution is not None else 'None'}")
+                print(f"{'Pdop:':20} {waypoint.position_dilution if waypoint.position_dilution is not None else 'None'}")
+                print(f"{'Age of GPS Data:':20} {waypoint.age_of_dgps_data if waypoint.age_of_dgps_data is not None else 'None'}")
+                print(f"{'Dgpsid:':20} {waypoint.dgps_id if waypoint.dgps_id is not None else 'None'}")
+                break
+        else:
+            print("Waypoint not found.")
+    elif choice == 'n':
+        print("Returning to the waypoints menu...")
+        return
+    else:
+        print("Invalid selection, please try again.")
+        return
+
+    input("Press Enter to return to the waypoints menu...")
      
 def add_waypoint(gpx):
 
@@ -76,7 +123,7 @@ def delete_waypoint(gpx):
     
     # This function allows the user to delete a waypoint from the GPX file.
     cls()
-    print_points(gpx)
+    print_only_points(gpx)
     
     name = input("Enter the name of the waypoint to delete: ")
     
@@ -94,7 +141,7 @@ def update_waypoint(gpx):
     
      # This function allows the user to update a waypoint in the GPX file.
      cls()
-     print_points(gpx)
+     print_only_points(gpx)
      
      name = input("Enter the name of the waypoint to update: ")
      
@@ -104,12 +151,108 @@ def update_waypoint(gpx):
                new_latitude = float(input(f"Enter the new latitude (current: {waypoint.latitude}): ") or waypoint.latitude)
                new_longitude = float(input(f"Enter the new longitude (current: {waypoint.longitude}): ") or waypoint.longitude)
                new_elevation = float(input(f"Enter the new elevation (current: {waypoint.elevation}): ") or waypoint.elevation)
-               
+
                waypoint.name = new_name
                waypoint.latitude = new_latitude
                waypoint.longitude = new_longitude
                waypoint.elevation = new_elevation
-               
+
+               # Ask y/n to see further details to update
+               print("Do you want to update additional details for this waypoint? (y/n)")
+               additional_details = input("Please select an option (y/n): ").lower()
+               if additional_details == 'y':
+                   print("1. Timestamp")
+                   print("2. Magvar")
+                   print("3. Geoid height")
+                   print("4. Comment")
+                   print("5. Description")
+                   print("6. Source")
+                   print("7. Link")
+                   print("8. Symbol")
+                   print("9. Type")
+                   print("10. Fix")
+                   print("11. Satellite")
+                   print("12. hdop")
+                   print("13. vdop")
+                   print("14. pdop")
+                   print("15. Age of GPS data")
+                   print("16. dgpsid")
+
+                   update_choice = input("Please select an option (1-17) or press Enter to skip: ")
+                   if update_choice == '1':
+                       new_time = input("Enter the new timestamp (YYYY-MM-DDTHH:MM:SSZ) or press Enter to keep the same: ")
+                       if new_time:
+                           waypoint.time = gpxpy.gpx.GPXTime(new_time)
+                   elif update_choice == '2':
+                       new_magvar = input("Enter the new magnetic variation (or press Enter to keep the same): ")
+                       if new_magvar:
+                           waypoint.magnetic_variation = float(new_magvar)
+                   elif update_choice == '3':
+                       new_geoid_height = input("Enter the new geoid height (or press Enter to keep the same): ")
+                       if new_geoid_height:
+                           waypoint.geoid_height = float(new_geoid_height)
+                   elif update_choice == '4':
+                       new_comment = input("Enter the new comment (or press Enter to keep the same): ")
+                       if new_comment:
+                           waypoint.comment = new_comment
+                   elif update_choice == '5':
+                       new_description = input("Enter the new description (or press Enter to keep the same): ")
+                       if new_description:
+                           waypoint.description = new_description
+                   elif update_choice == '6':
+                       new_source = input("Enter the new source (or press Enter to keep the same): ")
+                       if new_source:
+                           waypoint.source = new_source
+                   elif update_choice == '7':
+                       new_link = input("Enter the new link (or press Enter to keep the same): ")
+                       if new_link:
+                           waypoint.link = gpxpy.gpx.GPXLink(href=new_link)
+                   elif update_choice == '8':
+                       new_symbol = input("Enter the new symbol (or press Enter to keep the same): ")
+                       if new_symbol:
+                           waypoint.symbol = new_symbol
+                   elif update_choice == '9':
+                       new_type = input("Enter the new type (or press Enter to keep the same): ")
+                       if new_type:
+                           waypoint.type = new_type
+                   elif update_choice == '10':
+                       new_fix = input("Enter the new fix (or press Enter to keep the same): ")
+                       if new_fix == ('none' or '2d' or '3d' or 'dgps' or 'pps' or '3'):
+                           waypoint.type_of_gpx_fix = new_fix
+                   elif update_choice == '11':
+                       new_satellite = input("Enter the new satellite (or press Enter to keep the same): ")
+                       if new_satellite:
+                           waypoint.satellites = int(new_satellite)
+                   elif update_choice == '12': 
+                       new_hdop = input("Enter the new hdop (or press Enter to keep the same): ")
+                       if new_hdop:
+                           waypoint.horizontal_dilution = float(new_hdop)
+                   elif update_choice == '13': 
+                       new_vdop = input("Enter the new vdop (or press Enter to keep the same): ")
+                       if new_vdop:
+                           waypoint.vertical_dilution = float(new_vdop)
+                   elif update_choice == '14':     
+                       new_pdop = input("Enter the new pdop (or press Enter to keep the same): ")
+                       if new_pdop:
+                           waypoint.position_dilution = float(new_pdop)
+                   elif update_choice == '15':
+                       new_age_of_gps_data = input("Enter the new age of GPS data (or press Enter to keep the same): ")
+                       if new_age_of_gps_data:
+                           waypoint.age_of_gps_data = float(new_age_of_gps_data)
+                   elif update_choice == '16':
+                       new_dgpsid = input("Enter the new dgpsid (or press Enter to keep the same): ")
+                       if new_dgpsid:
+                           waypoint.dgps_id = int(new_dgpsid)      
+                   else:
+                       print("No additional details updated or invalid type.")
+               elif additional_details == 'n':
+                   print("No additional details updated.")
+                     
+               else:
+                   print("Invalid selection, please try again.")
+                   return
+                
+
                print(f"Waypoint '{name}' updated successfully.")
                break
      else:
