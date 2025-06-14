@@ -5,6 +5,7 @@ from Waypoints import waypoints_menu
 from print_file import print_pdf
 from print_file import print_gpx
 from Routes import routes_menu
+from Tracks import tracks_menu
 from grafic import grafic
 
 
@@ -31,6 +32,7 @@ def GPX_Menu(gpx_file):
             waypoints_menu(gpx_file)
         elif choice == '3':
             print("Track menu selected.")
+            tracks_menu(gpx_file)
         elif choice == '4':
             print("Route menu selected.")
             routes_menu(gpx_file)

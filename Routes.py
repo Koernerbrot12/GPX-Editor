@@ -68,7 +68,6 @@ def add_route(gpx):
         print(f"- {waypoint.name} (Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation})")
 
     while True:
-        cls()
         route_point_name = input("Enter a waypoint name to add to the route (or type 'done' when finished): ")
         if route_point_name.lower() == 'done':
             break
@@ -208,12 +207,12 @@ def update_route_points(gpx, route):
     for point in route.points:
         if point.name == waypoint_name:
             found = True
-            # update the point's latitude, longitude, and elevation
+            # update the point's latitude, longitude, and elevation, or keeo current values if the user presses Enter without inputting a new value
             point.name = str(input("Enter new name for the waypoint (or press Enter to keep current name): ") or point.name)
             waypoint_name = point.name  # Update the name variable to reflect the new name
-            point.latitude = float(input("Enter new latitude: "))
-            point.longitude = float(input("Enter new longitude: "))
-            point.elevation = float(input("Enter new elevation: "))
+            point.latitude = float(input("Enter new latitude: ") or point.latitude) 
+            point.longitude = float(input("Enter new longitude: ") or point.longitude)
+            point.elevation = float(input("Enter new elevation: ") or point.elevation)
             print(f"Waypoint '{waypoint_name}' updated successfully.")
             break
     if not found:
