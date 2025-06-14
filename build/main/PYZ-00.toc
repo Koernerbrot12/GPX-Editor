@@ -1,6 +1,14 @@
 ('C:\\Users\\albre\\Documents\\4. Semester\\Software '
  'Engineering\\GPX-Editor\\build\\main\\PYZ-00.pyz',
- [('Waypoints',
+ [('Routes',
+   'C:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\Routes.py',
+   'PYMODULE'),
+  ('Tracks',
+   'C:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\Tracks.py',
+   'PYMODULE'),
+  ('Waypoints',
    'C:\\Users\\albre\\Documents\\4. Semester\\Software '
    'Engineering\\GPX-Editor\\Waypoints.py',
    'PYMODULE'),
@@ -23,6 +31,10 @@
   ('_compression',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('_markupbase',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\_markupbase.py',
    'PYMODULE'),
   ('_py_abc',
    'C:\\Program '
@@ -188,6 +200,26 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\bisect.py',
    'PYMODULE'),
+  ('branca',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\branca\\__init__.py',
+   'PYMODULE'),
+  ('branca._version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\branca\\_version.py',
+   'PYMODULE'),
+  ('branca.colormap',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\branca\\colormap.py',
+   'PYMODULE'),
+  ('branca.element',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\branca\\element.py',
+   'PYMODULE'),
+  ('branca.utilities',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\branca\\utilities.py',
+   'PYMODULE'),
   ('bz2',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\bz2.py',
@@ -196,9 +228,49 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\calendar.py',
    'PYMODULE'),
+  ('certifi',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
   ('cgi',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\cgi.py',
+   'PYMODULE'),
+  ('charset_normalizer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\__init__.py',
+   'PYMODULE'),
+  ('charset_normalizer.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\api.py',
+   'PYMODULE'),
+  ('charset_normalizer.cd',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\cd.py',
+   'PYMODULE'),
+  ('charset_normalizer.constant',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\constant.py',
+   'PYMODULE'),
+  ('charset_normalizer.legacy',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\legacy.py',
+   'PYMODULE'),
+  ('charset_normalizer.models',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\models.py',
+   'PYMODULE'),
+  ('charset_normalizer.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\utils.py',
+   'PYMODULE'),
+  ('charset_normalizer.version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\charset_normalizer\\version.py',
    'PYMODULE'),
   ('cmd',
    'C:\\Program '
@@ -260,6 +332,10 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\ctypes\\_endian.py',
    'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
   ('dataclasses',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\dataclasses.py',
@@ -267,6 +343,66 @@
   ('datetime',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('dateutil',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\__init__.py',
+   'PYMODULE'),
+  ('dateutil._common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\_common.py',
+   'PYMODULE'),
+  ('dateutil._version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\_version.py',
+   'PYMODULE'),
+  ('dateutil.easter',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\easter.py',
+   'PYMODULE'),
+  ('dateutil.parser',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\parser\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.parser._parser',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\parser\\_parser.py',
+   'PYMODULE'),
+  ('dateutil.parser.isoparser',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\parser\\isoparser.py',
+   'PYMODULE'),
+  ('dateutil.relativedelta',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\relativedelta.py',
+   'PYMODULE'),
+  ('dateutil.rrule',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\rrule.py',
+   'PYMODULE'),
+  ('dateutil.tz',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\tz\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.tz._common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\tz\\_common.py',
+   'PYMODULE'),
+  ('dateutil.tz._factories',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\tz\\_factories.py',
+   'PYMODULE'),
+  ('dateutil.tz.tz',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\tz\\tz.py',
+   'PYMODULE'),
+  ('dateutil.tz.win',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\tz\\win.py',
+   'PYMODULE'),
+  ('dateutil.zoneinfo',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\dateutil\\zoneinfo\\__init__.py',
    'PYMODULE'),
   ('decimal',
    'C:\\Program '
@@ -364,9 +500,97 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\email\\utils.py',
    'PYMODULE'),
+  ('et_xmlfile',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\et_xmlfile\\__init__.py',
+   'PYMODULE'),
+  ('et_xmlfile.incremental_tree',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\et_xmlfile\\incremental_tree.py',
+   'PYMODULE'),
+  ('et_xmlfile.xmlfile',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\et_xmlfile\\xmlfile.py',
+   'PYMODULE'),
+  ('fileinput',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\fileinput.py',
+   'PYMODULE'),
   ('fnmatch',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('folium',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\__init__.py',
+   'PYMODULE'),
+  ('folium._version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\_version.py',
+   'PYMODULE'),
+  ('folium.elements',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\elements.py',
+   'PYMODULE'),
+  ('folium.features',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\features.py',
+   'PYMODULE'),
+  ('folium.folium',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\folium.py',
+   'PYMODULE'),
+  ('folium.map',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\map.py',
+   'PYMODULE'),
+  ('folium.raster_layers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\raster_layers.py',
+   'PYMODULE'),
+  ('folium.template',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\template.py',
+   'PYMODULE'),
+  ('folium.utilities',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\utilities.py',
+   'PYMODULE'),
+  ('folium.vector_layers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\folium\\vector_layers.py',
+   'PYMODULE'),
+  ('fpdf',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\__init__.py',
+   'PYMODULE'),
+  ('fpdf.fonts',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\fonts.py',
+   'PYMODULE'),
+  ('fpdf.fpdf',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\fpdf.py',
+   'PYMODULE'),
+  ('fpdf.html',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\html.py',
+   'PYMODULE'),
+  ('fpdf.php',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\php.py',
+   'PYMODULE'),
+  ('fpdf.py3k',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\py3k.py',
+   'PYMODULE'),
+  ('fpdf.template',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\template.py',
+   'PYMODULE'),
+  ('fpdf.ttfonts',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\fpdf\\ttfonts.py',
    'PYMODULE'),
   ('fractions',
    'C:\\Program '
@@ -416,6 +640,10 @@
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
    'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\gpxpy\\utils.py',
    'PYMODULE'),
+  ('grafic',
+   'C:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\grafic.py',
+   'PYMODULE'),
   ('gzip',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\gzip.py',
@@ -436,6 +664,10 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\html\\entities.py',
    'PYMODULE'),
+  ('html.parser',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\html\\parser.py',
+   'PYMODULE'),
   ('http',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\http\\__init__.py',
@@ -448,9 +680,37 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\http\\cookiejar.py',
    'PYMODULE'),
+  ('http.cookies',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\http\\cookies.py',
+   'PYMODULE'),
   ('http.server',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('idna',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\idna\\uts46data.py',
    'PYMODULE'),
   ('importlib',
    'C:\\Program '
@@ -547,6 +807,98 @@
   ('ipaddress',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('jinja2',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\__init__.py',
+   'PYMODULE'),
+  ('jinja2._identifier',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\_identifier.py',
+   'PYMODULE'),
+  ('jinja2.async_utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\async_utils.py',
+   'PYMODULE'),
+  ('jinja2.bccache',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\bccache.py',
+   'PYMODULE'),
+  ('jinja2.compiler',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\compiler.py',
+   'PYMODULE'),
+  ('jinja2.constants',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\constants.py',
+   'PYMODULE'),
+  ('jinja2.debug',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\debug.py',
+   'PYMODULE'),
+  ('jinja2.defaults',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\defaults.py',
+   'PYMODULE'),
+  ('jinja2.environment',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\environment.py',
+   'PYMODULE'),
+  ('jinja2.exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\exceptions.py',
+   'PYMODULE'),
+  ('jinja2.ext',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\ext.py',
+   'PYMODULE'),
+  ('jinja2.filters',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\filters.py',
+   'PYMODULE'),
+  ('jinja2.idtracking',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\idtracking.py',
+   'PYMODULE'),
+  ('jinja2.lexer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\lexer.py',
+   'PYMODULE'),
+  ('jinja2.loaders',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\loaders.py',
+   'PYMODULE'),
+  ('jinja2.nodes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\nodes.py',
+   'PYMODULE'),
+  ('jinja2.optimizer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\optimizer.py',
+   'PYMODULE'),
+  ('jinja2.parser',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\parser.py',
+   'PYMODULE'),
+  ('jinja2.runtime',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\runtime.py',
+   'PYMODULE'),
+  ('jinja2.sandbox',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\sandbox.py',
+   'PYMODULE'),
+  ('jinja2.tests',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\tests.py',
+   'PYMODULE'),
+  ('jinja2.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\utils.py',
+   'PYMODULE'),
+  ('jinja2.visitor',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\jinja2\\visitor.py',
    'PYMODULE'),
   ('json',
    'C:\\Program '
@@ -668,6 +1020,14 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\lzma.py',
    'PYMODULE'),
+  ('markupsafe',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\markupsafe\\__init__.py',
+   'PYMODULE'),
+  ('markupsafe._native',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\markupsafe\\_native.py',
+   'PYMODULE'),
   ('menu',
    'C:\\Users\\albre\\Documents\\4. Semester\\Software '
    'Engineering\\GPX-Editor\\menu.py',
@@ -780,13 +1140,2413 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\numbers.py',
    'PYMODULE'),
+  ('numpy',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._array_api_info',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_array_api_info.py',
+   'PYMODULE'),
+  ('numpy._core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\__init__.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_add_newdocs.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs_scalars',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_add_newdocs_scalars.py',
+   'PYMODULE'),
+  ('numpy._core._asarray',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_asarray.py',
+   'PYMODULE'),
+  ('numpy._core._dtype',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_dtype.py',
+   'PYMODULE'),
+  ('numpy._core._dtype_ctypes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_dtype_ctypes.py',
+   'PYMODULE'),
+  ('numpy._core._exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('numpy._core._internal',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_internal.py',
+   'PYMODULE'),
+  ('numpy._core._machar',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_machar.py',
+   'PYMODULE'),
+  ('numpy._core._methods',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_methods.py',
+   'PYMODULE'),
+  ('numpy._core._string_helpers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_string_helpers.py',
+   'PYMODULE'),
+  ('numpy._core._type_aliases',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_type_aliases.py',
+   'PYMODULE'),
+  ('numpy._core._ufunc_config',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py',
+   'PYMODULE'),
+  ('numpy._core.arrayprint',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\arrayprint.py',
+   'PYMODULE'),
+  ('numpy._core.defchararray',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy._core.einsumfunc',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy._core.fromnumeric',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy._core.function_base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\function_base.py',
+   'PYMODULE'),
+  ('numpy._core.getlimits',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy._core.memmap',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\memmap.py',
+   'PYMODULE'),
+  ('numpy._core.multiarray',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\multiarray.py',
+   'PYMODULE'),
+  ('numpy._core.numeric',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\numeric.py',
+   'PYMODULE'),
+  ('numpy._core.numerictypes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy._core.overrides',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\overrides.py',
+   'PYMODULE'),
+  ('numpy._core.printoptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\printoptions.py',
+   'PYMODULE'),
+  ('numpy._core.records',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\records.py',
+   'PYMODULE'),
+  ('numpy._core.shape_base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy._core.strings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\strings.py',
+   'PYMODULE'),
+  ('numpy._core.umath',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_core\\umath.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy._expired_attrs_2_0',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_expired_attrs_2_0.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('numpy._pytesttester',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_pytesttester.py',
+   'PYMODULE'),
+  ('numpy._typing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy._typing._add_docstring',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_add_docstring.py',
+   'PYMODULE'),
+  ('numpy._typing._array_like',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_array_like.py',
+   'PYMODULE'),
+  ('numpy._typing._char_codes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_char_codes.py',
+   'PYMODULE'),
+  ('numpy._typing._dtype_like',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_dtype_like.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_nbit.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit_base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_nbit_base.py',
+   'PYMODULE'),
+  ('numpy._typing._nested_sequence',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_nested_sequence.py',
+   'PYMODULE'),
+  ('numpy._typing._scalars',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_scalars.py',
+   'PYMODULE'),
+  ('numpy._typing._shape',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_shape.py',
+   'PYMODULE'),
+  ('numpy._typing._ufunc',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_typing\\_ufunc.py',
+   'PYMODULE'),
+  ('numpy._utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_utils\\__init__.py',
+   'PYMODULE'),
+  ('numpy._utils._convertions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_utils\\_convertions.py',
+   'PYMODULE'),
+  ('numpy._utils._inspect',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\_utils\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.char',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\char\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core._utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\core\\_utils.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\ctypeslib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib._ctypeslib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\ctypeslib\\_ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.dtypes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\dtypes.py',
+   'PYMODULE'),
+  ('numpy.exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\exceptions.py',
+   'PYMODULE'),
+  ('numpy.f2py',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py.__version__',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\__version__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._backend',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_backend.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._distutils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_distutils.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._meson',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_meson.py',
+   'PYMODULE'),
+  ('numpy.f2py._isocbind',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\_isocbind.py',
+   'PYMODULE'),
+  ('numpy.f2py.auxfuncs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\auxfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.capi_maps',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\capi_maps.py',
+   'PYMODULE'),
+  ('numpy.f2py.cb_rules',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\cb_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.cfuncs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\cfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.common_rules',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\common_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.crackfortran',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\crackfortran.py',
+   'PYMODULE'),
+  ('numpy.f2py.diagnose',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\diagnose.py',
+   'PYMODULE'),
+  ('numpy.f2py.f2py2e',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\f2py2e.py',
+   'PYMODULE'),
+  ('numpy.f2py.f90mod_rules',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\f90mod_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.func2subr',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\func2subr.py',
+   'PYMODULE'),
+  ('numpy.f2py.rules',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.symbolic',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\symbolic.py',
+   'PYMODULE'),
+  ('numpy.f2py.use_rules',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\f2py\\use_rules.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft._helper',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\fft\\_helper.py',
+   'PYMODULE'),
+  ('numpy.fft._pocketfft',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._array_utils_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_array_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraypad_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_arraypad_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraysetops_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_arraysetops_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arrayterator_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_arrayterator_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib._format_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_format_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._function_base_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_function_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._histograms_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_histograms_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._index_tricks_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_index_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._nanfunctions_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_nanfunctions_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._npyio_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_npyio_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._polynomial_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_polynomial_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._scimath_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_scimath_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._shape_base_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._stride_tricks_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_stride_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._twodim_base_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._type_check_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_type_check_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._ufunclike_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_ufunclike_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._utils_impl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.array_utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\array_utils.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.introspect',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\introspect.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.lib.recfunctions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\recfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg._linalg',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.matlib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\matlib.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random._pickle',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\random\\_pickle.py',
+   'PYMODULE'),
+  ('numpy.rec',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\rec\\__init__.py',
+   'PYMODULE'),
+  ('numpy.strings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\strings\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.extbuild',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\testing\\_private\\extbuild.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.testing.overrides',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\testing\\overrides.py',
+   'PYMODULE'),
+  ('numpy.typing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\numpy\\version.py',
+   'PYMODULE'),
   ('opcode',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\opcode.py',
    'PYMODULE'),
+  ('openpyxl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl._constants',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\_constants.py',
+   'PYMODULE'),
+  ('openpyxl.cell',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\cell\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.cell._writer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\cell\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.cell.cell',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\cell\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.cell.read_only',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\cell\\read_only.py',
+   'PYMODULE'),
+  ('openpyxl.cell.rich_text',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\cell\\rich_text.py',
+   'PYMODULE'),
+  ('openpyxl.cell.text',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\cell\\text.py',
+   'PYMODULE'),
+  ('openpyxl.chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chart._3d',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\_3d.py',
+   'PYMODULE'),
+  ('openpyxl.chart._chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.area_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\area_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.axis',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\axis.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bar_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\bar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bubble_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\bubble_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.chartspace',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\chartspace.py',
+   'PYMODULE'),
+  ('openpyxl.chart.data_source',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\data_source.py',
+   'PYMODULE'),
+  ('openpyxl.chart.descriptors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\descriptors.py',
+   'PYMODULE'),
+  ('openpyxl.chart.error_bar',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\error_bar.py',
+   'PYMODULE'),
+  ('openpyxl.chart.label',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\label.py',
+   'PYMODULE'),
+  ('openpyxl.chart.layout',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\layout.py',
+   'PYMODULE'),
+  ('openpyxl.chart.legend',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\legend.py',
+   'PYMODULE'),
+  ('openpyxl.chart.line_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\line_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.marker',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\marker.py',
+   'PYMODULE'),
+  ('openpyxl.chart.picture',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pie_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\pie_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pivot',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\pivot.py',
+   'PYMODULE'),
+  ('openpyxl.chart.plotarea',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\plotarea.py',
+   'PYMODULE'),
+  ('openpyxl.chart.print_settings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.chart.radar_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\radar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reader',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\reader.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reference',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\reference.py',
+   'PYMODULE'),
+  ('openpyxl.chart.scatter_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\scatter_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\series.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series_factory',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\series_factory.py',
+   'PYMODULE'),
+  ('openpyxl.chart.shapes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\shapes.py',
+   'PYMODULE'),
+  ('openpyxl.chart.stock_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\stock_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.surface_chart',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\surface_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.text',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\text.py',
+   'PYMODULE'),
+  ('openpyxl.chart.title',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\title.py',
+   'PYMODULE'),
+  ('openpyxl.chart.trendline',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\trendline.py',
+   'PYMODULE'),
+  ('openpyxl.chart.updown_bars',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chart\\updown_bars.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.chartsheet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\chartsheet.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.custom',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.properties',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.protection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.publish',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\publish.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.relation',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.views',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\chartsheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.comments',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\comments\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.comments.author',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\comments\\author.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comment_sheet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\comments\\comment_sheet.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comments',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\comments\\comments.py',
+   'PYMODULE'),
+  ('openpyxl.comments.shape_writer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\comments\\shape_writer.py',
+   'PYMODULE'),
+  ('openpyxl.compat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\compat\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.compat.numbers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\compat\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.compat.strings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\compat\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\base.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.container',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\container.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.excel',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.namespace',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\namespace.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.nested',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\nested.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.sequence',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\sequence.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.serialisable',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\descriptors\\serialisable.py',
+   'PYMODULE'),
+  ('openpyxl.drawing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.colors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.connector',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\connector.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.drawing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.effect',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\effect.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.fill',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\fill.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.geometry',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\geometry.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.graphic',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\graphic.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.image',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\image.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.line',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\line.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.picture',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.properties',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.relation',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.spreadsheet_drawing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\spreadsheet_drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.text',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\text.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.xdr',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\drawing\\xdr.py',
+   'PYMODULE'),
+  ('openpyxl.formatting',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\formatting\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.formatting',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\formatting\\formatting.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.rule',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\formatting\\rule.py',
+   'PYMODULE'),
+  ('openpyxl.formula',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\formula\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formula.tokenizer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\formula\\tokenizer.py',
+   'PYMODULE'),
+  ('openpyxl.formula.translate',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\formula\\translate.py',
+   'PYMODULE'),
+  ('openpyxl.packaging',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\core.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.custom',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.extended',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\extended.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.manifest',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\manifest.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.relationship',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\relationship.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.workbook',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\packaging\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.pivot',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.cache',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\cache.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.fields',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\fields.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.record',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\record.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.table',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\pivot\\table.py',
+   'PYMODULE'),
+  ('openpyxl.reader',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\reader\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.reader.drawings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\reader\\drawings.py',
+   'PYMODULE'),
+  ('openpyxl.reader.excel',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\reader\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.reader.strings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\reader\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.reader.workbook',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\reader\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.styles',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.styles.alignment',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\alignment.py',
+   'PYMODULE'),
+  ('openpyxl.styles.borders',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\borders.py',
+   'PYMODULE'),
+  ('openpyxl.styles.builtins',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\builtins.py',
+   'PYMODULE'),
+  ('openpyxl.styles.cell_style',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\cell_style.py',
+   'PYMODULE'),
+  ('openpyxl.styles.colors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.styles.differential',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\differential.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fills',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\fills.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fonts',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\fonts.py',
+   'PYMODULE'),
+  ('openpyxl.styles.named_styles',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\named_styles.py',
+   'PYMODULE'),
+  ('openpyxl.styles.numbers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.styles.protection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.styles.proxy',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\proxy.py',
+   'PYMODULE'),
+  ('openpyxl.styles.styleable',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\styleable.py',
+   'PYMODULE'),
+  ('openpyxl.styles.stylesheet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\stylesheet.py',
+   'PYMODULE'),
+  ('openpyxl.styles.table',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\styles\\table.py',
+   'PYMODULE'),
+  ('openpyxl.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.utils.bound_dictionary',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\bound_dictionary.py',
+   'PYMODULE'),
+  ('openpyxl.utils.cell',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.utils.datetime',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\datetime.py',
+   'PYMODULE'),
+  ('openpyxl.utils.escape',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\escape.py',
+   'PYMODULE'),
+  ('openpyxl.utils.exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\exceptions.py',
+   'PYMODULE'),
+  ('openpyxl.utils.formulas',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\formulas.py',
+   'PYMODULE'),
+  ('openpyxl.utils.indexed_list',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\indexed_list.py',
+   'PYMODULE'),
+  ('openpyxl.utils.protection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.utils.units',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\utils\\units.py',
+   'PYMODULE'),
+  ('openpyxl.workbook',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook._writer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.child',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\child.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.defined_name',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\defined_name.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\external_link\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link.external',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\external_link\\external.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_reference',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\external_reference.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.function_group',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\function_group.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.properties',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.protection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.smart_tags',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\smart_tags.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.views',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\views.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.web',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\web.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.workbook',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\workbook\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._read_only',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_read_only.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._reader',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_reader.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._write_only',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_write_only.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._writer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.cell_range',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\cell_range.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.copier',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\copier.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.datavalidation',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\datavalidation.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.dimensions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\dimensions.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.drawing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.filters',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\filters.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.formula',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\formula.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.header_footer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\header_footer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.hyperlink',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\hyperlink.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.merge',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\merge.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.page',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\page.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.pagebreak',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\pagebreak.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.print_settings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.properties',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.protection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.related',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\related.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.scenario',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\scenario.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.table',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\table.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.views',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.worksheet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\worksheet\\worksheet.py',
+   'PYMODULE'),
+  ('openpyxl.writer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\writer\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.writer.excel',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\writer\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.writer.theme',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\writer\\theme.py',
+   'PYMODULE'),
+  ('openpyxl.xml',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\xml\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.xml.constants',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\xml\\constants.py',
+   'PYMODULE'),
+  ('openpyxl.xml.functions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\openpyxl\\xml\\functions.py',
+   'PYMODULE'),
   ('optparse',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\optparse.py',
+   'PYMODULE'),
+  ('pandas',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_config\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config.config',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_config\\config.py',
+   'PYMODULE'),
+  ('pandas._config.dates',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_config\\dates.py',
+   'PYMODULE'),
+  ('pandas._config.display',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_config\\display.py',
+   'PYMODULE'),
+  ('pandas._config.localization',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_config\\localization.py',
+   'PYMODULE'),
+  ('pandas._libs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_libs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.window',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_testing\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing._io',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_testing\\_io.py',
+   'PYMODULE'),
+  ('pandas._testing._warnings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_testing\\_warnings.py',
+   'PYMODULE'),
+  ('pandas._testing.asserters',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_testing\\asserters.py',
+   'PYMODULE'),
+  ('pandas._testing.compat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_testing\\compat.py',
+   'PYMODULE'),
+  ('pandas._testing.contexts',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_testing\\contexts.py',
+   'PYMODULE'),
+  ('pandas._typing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_typing.py',
+   'PYMODULE'),
+  ('pandas._version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_version.py',
+   'PYMODULE'),
+  ('pandas._version_meson',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\_version_meson.py',
+   'PYMODULE'),
+  ('pandas.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\api\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.extensions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\api\\extensions\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.indexers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\api\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.interchange',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\api\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.types',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\api\\types\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.typing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\api\\typing\\__init__.py',
+   'PYMODULE'),
+  ('pandas.arrays',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat._constants',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\_constants.py',
+   'PYMODULE'),
+  ('pandas.compat._optional',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\_optional.py',
+   'PYMODULE'),
+  ('pandas.compat.compressors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\compressors.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy.function',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\numpy\\function.py',
+   'PYMODULE'),
+  ('pandas.compat.pickle_compat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\pickle_compat.py',
+   'PYMODULE'),
+  ('pandas.compat.pyarrow',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\compat\\pyarrow.py',
+   'PYMODULE'),
+  ('pandas.core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.executor',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\executor.py',
+   'PYMODULE'),
+  ('pandas.core._numba.extensions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\extensions.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.mean_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\mean_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.min_max_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\min_max_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.shared',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\shared.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.sum_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\sum_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.var_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\var_.py',
+   'PYMODULE'),
+  ('pandas.core.accessor',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.algorithms',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\algorithms.py',
+   'PYMODULE'),
+  ('pandas.core.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\api.py',
+   'PYMODULE'),
+  ('pandas.core.apply',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\apply.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.datetimelike_accumulations',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\datetimelike_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_accumulations',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_reductions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_reductions.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.putmask',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\putmask.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.quantile',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\quantile.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.replace',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\replace.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.take',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\take.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.transforms',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\transforms.py',
+   'PYMODULE'),
+  ('pandas.core.arraylike',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arraylike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._arrow_string_mixins',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_arrow_string_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._mixins',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._ranges',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_ranges.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow._arrow_utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\_arrow_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.accessors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.array',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.extension_types',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\extension_types.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\base.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.boolean',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\boolean.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.categorical',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimelike',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.floating',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\floating.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.integer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\integer.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.interval',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.masked',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\masked.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numeric',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numpy_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\numpy_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.period',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\period.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.accessor',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.array',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.scipy_sparse',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\scipy_sparse.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\string_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_arrow',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\string_arrow.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.timedeltas',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\base.py',
+   'PYMODULE'),
+  ('pandas.core.common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.computation.align',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\align.py',
+   'PYMODULE'),
+  ('pandas.core.computation.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\api.py',
+   'PYMODULE'),
+  ('pandas.core.computation.check',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\check.py',
+   'PYMODULE'),
+  ('pandas.core.computation.common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation.engines',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\engines.py',
+   'PYMODULE'),
+  ('pandas.core.computation.eval',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\eval.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expr',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\expr.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expressions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\expressions.py',
+   'PYMODULE'),
+  ('pandas.core.computation.ops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.computation.parsing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\parsing.py',
+   'PYMODULE'),
+  ('pandas.core.computation.pytables',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\pytables.py',
+   'PYMODULE'),
+  ('pandas.core.computation.scope',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\scope.py',
+   'PYMODULE'),
+  ('pandas.core.config_init',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\config_init.py',
+   'PYMODULE'),
+  ('pandas.core.construction',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.astype',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\astype.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.cast',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\cast.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\common.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.concat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.dtypes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\dtypes.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.generic',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.inference',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\inference.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.missing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.flags',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\flags.py',
+   'PYMODULE'),
+  ('pandas.core.frame',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\frame.py',
+   'PYMODULE'),
+  ('pandas.core.generic',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\base.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.categorical',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.generic',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.groupby',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\groupby.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.grouper',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\grouper.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.indexing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.numba_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.ops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.indexers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.objects',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\objects.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.indexes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.accessors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.category',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\category.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimelike',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.extension',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\extension.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.frozen',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\frozen.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.interval',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.multi',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\multi.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.period',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\period.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.range',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\range.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.timedeltas',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.indexing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.interchange',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.buffer',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\buffer.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.column',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\column.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe_protocol',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe_protocol.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.from_dataframe',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\from_dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.internals',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.internals.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\api.py',
+   'PYMODULE'),
+  ('pandas.core.internals.array_manager',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\array_manager.py',
+   'PYMODULE'),
+  ('pandas.core.internals.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\base.py',
+   'PYMODULE'),
+  ('pandas.core.internals.blocks',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\blocks.py',
+   'PYMODULE'),
+  ('pandas.core.internals.concat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.internals.construction',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.internals.managers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py',
+   'PYMODULE'),
+  ('pandas.core.internals.ops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.methods',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.methods.describe',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\describe.py',
+   'PYMODULE'),
+  ('pandas.core.methods.selectn',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\selectn.py',
+   'PYMODULE'),
+  ('pandas.core.methods.to_dict',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\to_dict.py',
+   'PYMODULE'),
+  ('pandas.core.missing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.nanops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\nanops.py',
+   'PYMODULE'),
+  ('pandas.core.ops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.ops.array_ops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\array_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\common.py',
+   'PYMODULE'),
+  ('pandas.core.ops.dispatch',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\dispatch.py',
+   'PYMODULE'),
+  ('pandas.core.ops.docstrings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\docstrings.py',
+   'PYMODULE'),
+  ('pandas.core.ops.invalid',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\invalid.py',
+   'PYMODULE'),
+  ('pandas.core.ops.mask_ops',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\mask_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.missing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.resample',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\resample.py',
+   'PYMODULE'),
+  ('pandas.core.reshape',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\api.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.concat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.encoding',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\encoding.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.melt',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\melt.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.merge',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\merge.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.pivot',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\pivot.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.reshape',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\reshape.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.tile',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\tile.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\util.py',
+   'PYMODULE'),
+  ('pandas.core.roperator',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\roperator.py',
+   'PYMODULE'),
+  ('pandas.core.sample',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\sample.py',
+   'PYMODULE'),
+  ('pandas.core.series',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\series.py',
+   'PYMODULE'),
+  ('pandas.core.shared_docs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\shared_docs.py',
+   'PYMODULE'),
+  ('pandas.core.sorting',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\sorting.py',
+   'PYMODULE'),
+  ('pandas.core.strings',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.strings.accessor',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.strings.base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\base.py',
+   'PYMODULE'),
+  ('pandas.core.strings.object_array',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\object_array.py',
+   'PYMODULE'),
+  ('pandas.core.tools',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.tools.datetimes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.tools.numeric',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.tools.timedeltas',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.tools.times',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\times.py',
+   'PYMODULE'),
+  ('pandas.core.util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.util.hashing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\util\\hashing.py',
+   'PYMODULE'),
+  ('pandas.core.util.numba_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\util\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.window.common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\common.py',
+   'PYMODULE'),
+  ('pandas.core.window.doc',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\doc.py',
+   'PYMODULE'),
+  ('pandas.core.window.ewm',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\ewm.py',
+   'PYMODULE'),
+  ('pandas.core.window.expanding',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\expanding.py',
+   'PYMODULE'),
+  ('pandas.core.window.numba_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window.online',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\online.py',
+   'PYMODULE'),
+  ('pandas.core.window.rolling',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\core\\window\\rolling.py',
+   'PYMODULE'),
+  ('pandas.errors',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\errors\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io._util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\api.py',
+   'PYMODULE'),
+  ('pandas.io.clipboard',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.clipboards',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\clipboards.py',
+   'PYMODULE'),
+  ('pandas.io.common',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\common.py',
+   'PYMODULE'),
+  ('pandas.io.excel',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.excel._base',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_base.py',
+   'PYMODULE'),
+  ('pandas.io.excel._calamine',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_calamine.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odfreader',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_odfreader.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odswriter',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_odswriter.py',
+   'PYMODULE'),
+  ('pandas.io.excel._openpyxl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_openpyxl.py',
+   'PYMODULE'),
+  ('pandas.io.excel._pyxlsb',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_pyxlsb.py',
+   'PYMODULE'),
+  ('pandas.io.excel._util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlrd',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_xlrd.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlsxwriter',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_xlsxwriter.py',
+   'PYMODULE'),
+  ('pandas.io.feather_format',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\feather_format.py',
+   'PYMODULE'),
+  ('pandas.io.formats',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.formats._color_data',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\_color_data.py',
+   'PYMODULE'),
+  ('pandas.io.formats.console',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\console.py',
+   'PYMODULE'),
+  ('pandas.io.formats.css',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\css.py',
+   'PYMODULE'),
+  ('pandas.io.formats.csvs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py',
+   'PYMODULE'),
+  ('pandas.io.formats.excel',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\excel.py',
+   'PYMODULE'),
+  ('pandas.io.formats.format',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\format.py',
+   'PYMODULE'),
+  ('pandas.io.formats.html',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\html.py',
+   'PYMODULE'),
+  ('pandas.io.formats.info',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\info.py',
+   'PYMODULE'),
+  ('pandas.io.formats.printing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\printing.py',
+   'PYMODULE'),
+  ('pandas.io.formats.string',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\string.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\style.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style_render',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\style_render.py',
+   'PYMODULE'),
+  ('pandas.io.formats.xml',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\xml.py',
+   'PYMODULE'),
+  ('pandas.io.gbq',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\gbq.py',
+   'PYMODULE'),
+  ('pandas.io.html',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\html.py',
+   'PYMODULE'),
+  ('pandas.io.json',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\json\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.json._json',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_json.py',
+   'PYMODULE'),
+  ('pandas.io.json._normalize',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_normalize.py',
+   'PYMODULE'),
+  ('pandas.io.json._table_schema',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_table_schema.py',
+   'PYMODULE'),
+  ('pandas.io.orc',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\orc.py',
+   'PYMODULE'),
+  ('pandas.io.parquet',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parquet.py',
+   'PYMODULE'),
+  ('pandas.io.parsers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.arrow_parser_wrapper',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\arrow_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.base_parser',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\base_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.c_parser_wrapper',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\c_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.python_parser',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\python_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.readers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\readers.py',
+   'PYMODULE'),
+  ('pandas.io.pickle',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\pickle.py',
+   'PYMODULE'),
+  ('pandas.io.pytables',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\pytables.py',
+   'PYMODULE'),
+  ('pandas.io.sas',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas7bdat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas7bdat.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_constants',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas_constants.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_xport',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas_xport.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sasreader',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sasreader.py',
+   'PYMODULE'),
+  ('pandas.io.spss',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\spss.py',
+   'PYMODULE'),
+  ('pandas.io.sql',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\sql.py',
+   'PYMODULE'),
+  ('pandas.io.stata',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\stata.py',
+   'PYMODULE'),
+  ('pandas.io.xml',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\io\\xml.py',
+   'PYMODULE'),
+  ('pandas.plotting',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\plotting\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._core',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\plotting\\_core.py',
+   'PYMODULE'),
+  ('pandas.plotting._misc',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\plotting\\_misc.py',
+   'PYMODULE'),
+  ('pandas.testing',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\testing.py',
+   'PYMODULE'),
+  ('pandas.tseries',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\tseries\\__init__.py',
+   'PYMODULE'),
+  ('pandas.tseries.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\tseries\\api.py',
+   'PYMODULE'),
+  ('pandas.tseries.frequencies',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\tseries\\frequencies.py',
+   'PYMODULE'),
+  ('pandas.tseries.holiday',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\tseries\\holiday.py',
+   'PYMODULE'),
+  ('pandas.tseries.offsets',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\tseries\\offsets.py',
+   'PYMODULE'),
+  ('pandas.util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.util._decorators',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\_decorators.py',
+   'PYMODULE'),
+  ('pandas.util._exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\_exceptions.py',
+   'PYMODULE'),
+  ('pandas.util._print_versions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\_print_versions.py',
+   'PYMODULE'),
+  ('pandas.util._tester',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\_tester.py',
+   'PYMODULE'),
+  ('pandas.util._validators',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\_validators.py',
+   'PYMODULE'),
+  ('pandas.util.version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pandas\\util\\version\\__init__.py',
    'PYMODULE'),
   ('parser',
    'C:\\Users\\albre\\Documents\\4. Semester\\Software '
@@ -803,6 +3563,10 @@
   ('pickle',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('pickletools',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pickletools.py',
    'PYMODULE'),
   ('pkgutil',
    'C:\\Program '
@@ -836,201 +3600,25 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pydoc_data\\topics.py',
    'PYMODULE'),
-  ('pypdf',
+  ('pytz',
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\__init__.py',
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pytz\\__init__.py',
    'PYMODULE'),
-  ('pypdf._cmap',
+  ('pytz.exceptions',
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_cmap.py',
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pytz\\exceptions.py',
    'PYMODULE'),
-  ('pypdf._codecs',
+  ('pytz.lazy',
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\__init__.py',
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pytz\\lazy.py',
    'PYMODULE'),
-  ('pypdf._codecs._codecs',
+  ('pytz.tzfile',
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\_codecs.py',
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pytz\\tzfile.py',
    'PYMODULE'),
-  ('pypdf._codecs.adobe_glyphs',
+  ('pytz.tzinfo',
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\adobe_glyphs.py',
-   'PYMODULE'),
-  ('pypdf._codecs.pdfdoc',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\pdfdoc.py',
-   'PYMODULE'),
-  ('pypdf._codecs.std',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\std.py',
-   'PYMODULE'),
-  ('pypdf._codecs.symbol',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\symbol.py',
-   'PYMODULE'),
-  ('pypdf._codecs.zapfding',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_codecs\\zapfding.py',
-   'PYMODULE'),
-  ('pypdf._crypt_providers',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_crypt_providers\\__init__.py',
-   'PYMODULE'),
-  ('pypdf._crypt_providers._base',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_crypt_providers\\_base.py',
-   'PYMODULE'),
-  ('pypdf._crypt_providers._cryptography',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_crypt_providers\\_cryptography.py',
-   'PYMODULE'),
-  ('pypdf._crypt_providers._fallback',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_crypt_providers\\_fallback.py',
-   'PYMODULE'),
-  ('pypdf._crypt_providers._pycryptodome',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_crypt_providers\\_pycryptodome.py',
-   'PYMODULE'),
-  ('pypdf._doc_common',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_doc_common.py',
-   'PYMODULE'),
-  ('pypdf._encryption',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_encryption.py',
-   'PYMODULE'),
-  ('pypdf._merger',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_merger.py',
-   'PYMODULE'),
-  ('pypdf._page',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_page.py',
-   'PYMODULE'),
-  ('pypdf._page_labels',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_page_labels.py',
-   'PYMODULE'),
-  ('pypdf._protocols',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_protocols.py',
-   'PYMODULE'),
-  ('pypdf._reader',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_reader.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\__init__.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction._layout_mode',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\__init__.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction._layout_mode._fixed_width_page',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\_fixed_width_page.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction._layout_mode._font',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\_font.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction._layout_mode._font_widths',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\_font_widths.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction._layout_mode._text_state_manager',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\_text_state_manager.py',
-   'PYMODULE'),
-  ('pypdf._text_extraction._layout_mode._text_state_params',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\_text_state_params.py',
-   'PYMODULE'),
-  ('pypdf._utils',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_utils.py',
-   'PYMODULE'),
-  ('pypdf._version',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_version.py',
-   'PYMODULE'),
-  ('pypdf._writer',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_writer.py',
-   'PYMODULE'),
-  ('pypdf._xobj_image_helpers',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\_xobj_image_helpers.py',
-   'PYMODULE'),
-  ('pypdf.constants',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\constants.py',
-   'PYMODULE'),
-  ('pypdf.errors',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\errors.py',
-   'PYMODULE'),
-  ('pypdf.filters',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\filters.py',
-   'PYMODULE'),
-  ('pypdf.generic',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\__init__.py',
-   'PYMODULE'),
-  ('pypdf.generic._base',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_base.py',
-   'PYMODULE'),
-  ('pypdf.generic._data_structures',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_data_structures.py',
-   'PYMODULE'),
-  ('pypdf.generic._files',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_files.py',
-   'PYMODULE'),
-  ('pypdf.generic._fit',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_fit.py',
-   'PYMODULE'),
-  ('pypdf.generic._image_inline',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_image_inline.py',
-   'PYMODULE'),
-  ('pypdf.generic._outline',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_outline.py',
-   'PYMODULE'),
-  ('pypdf.generic._rectangle',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_rectangle.py',
-   'PYMODULE'),
-  ('pypdf.generic._utils',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_utils.py',
-   'PYMODULE'),
-  ('pypdf.generic._viewerpref',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\generic\\_viewerpref.py',
-   'PYMODULE'),
-  ('pypdf.pagerange',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\pagerange.py',
-   'PYMODULE'),
-  ('pypdf.papersizes',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\papersizes.py',
-   'PYMODULE'),
-  ('pypdf.types',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\types.py',
-   'PYMODULE'),
-  ('pypdf.xmp',
-   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
-   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pypdf\\xmp.py',
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\pytz\\tzinfo.py',
    'PYMODULE'),
   ('queue',
    'C:\\Program '
@@ -1043,6 +3631,74 @@
   ('random',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\random.py',
+   'PYMODULE'),
+  ('requests',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('requests.api',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests.models',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\requests\\utils.py',
    'PYMODULE'),
   ('runpy',
    'C:\\Program '
@@ -1068,6 +3724,10 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\signal.py',
    'PYMODULE'),
+  ('six',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\six.py',
+   'PYMODULE'),
   ('socket',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\socket.py',
@@ -1075,6 +3735,18 @@
   ('socketserver',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('sqlite3',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py',
+   'PYMODULE'),
+  ('sqlite3.dbapi2',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py',
+   'PYMODULE'),
+  ('sqlite3.dump',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dump.py',
    'PYMODULE'),
   ('ssl',
    'C:\\Program '
@@ -1200,6 +3872,150 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\urllib\\response.py',
    'PYMODULE'),
+  ('urllib3',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\__init__.py',
+   'PYMODULE'),
+  ('urllib3._base_connection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\_base_connection.py',
+   'PYMODULE'),
+  ('urllib3._collections',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\_collections.py',
+   'PYMODULE'),
+  ('urllib3._request_methods',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\_request_methods.py',
+   'PYMODULE'),
+  ('urllib3._version',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\_version.py',
+   'PYMODULE'),
+  ('urllib3.connection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\connection.py',
+   'PYMODULE'),
+  ('urllib3.connectionpool',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\connectionpool.py',
+   'PYMODULE'),
+  ('urllib3.contrib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.connection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.fetch',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.request',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.response',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'PYMODULE'),
+  ('urllib3.exceptions',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\exceptions.py',
+   'PYMODULE'),
+  ('urllib3.fields',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\fields.py',
+   'PYMODULE'),
+  ('urllib3.filepost',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\filepost.py',
+   'PYMODULE'),
+  ('urllib3.http2',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\http2\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.http2.connection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\http2\\connection.py',
+   'PYMODULE'),
+  ('urllib3.http2.probe',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\http2\\probe.py',
+   'PYMODULE'),
+  ('urllib3.poolmanager',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\poolmanager.py',
+   'PYMODULE'),
+  ('urllib3.response',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\response.py',
+   'PYMODULE'),
+  ('urllib3.util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.util.connection',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\connection.py',
+   'PYMODULE'),
+  ('urllib3.util.proxy',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\proxy.py',
+   'PYMODULE'),
+  ('urllib3.util.request',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\request.py',
+   'PYMODULE'),
+  ('urllib3.util.response',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\response.py',
+   'PYMODULE'),
+  ('urllib3.util.retry',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\retry.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_match_hostname',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
+   'PYMODULE'),
+  ('urllib3.util.ssltransport',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'PYMODULE'),
+  ('urllib3.util.timeout',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\timeout.py',
+   'PYMODULE'),
+  ('urllib3.util.url',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\url.py',
+   'PYMODULE'),
+  ('urllib3.util.util',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\util.py',
+   'PYMODULE'),
+  ('urllib3.util.wait',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\urllib3\\util\\wait.py',
+   'PYMODULE'),
   ('uuid',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\uuid.py',
@@ -1303,6 +4119,18 @@
   ('xmlrpc.client',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('xyzservices',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\xyzservices\\__init__.py',
+   'PYMODULE'),
+  ('xyzservices.lib',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\xyzservices\\lib.py',
+   'PYMODULE'),
+  ('xyzservices.providers',
+   'c:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\xyzservices\\providers.py',
    'PYMODULE'),
   ('zipfile',
    'C:\\Program '
