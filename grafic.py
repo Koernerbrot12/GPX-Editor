@@ -2,8 +2,13 @@ import folium
 from commands import cls
 import gpxpy
 import webbrowser
+import os
+
 def grafic(gpx_file):
+
     while True:
+        # User chooces to show a track or route on the map
+        cls()
         print("1. Show track on map")
         print("2. Show route on map")
         print("3. Exit to menu")
@@ -21,30 +26,34 @@ def grafic(gpx_file):
         cls()
             
 def track_show(gpx_file):
-    if not gpx_file.tracks:
-        print("No tracks available to display.")
-        return
-    
-    track_names = [track.name for track in gpx_file.tracks]
-    print("Available Tracks:")
-    for i, name in enumerate(track_names, start=1):
-        print(f"{i}. {name}")
-    track_index = input("Select a track by number (or 'q' to quit): ")
-    if track_index.lower() == 'q':
-        print("Exiting track display.")
-        return
+    # This function displays the available tracks in the GPX file and allows the user to select one to display on a map.
 
-    track = gpx_file.tracks[int(track_index) - 1]
-    if not track.segments:
+    if not gpx_file.tracks:                                                                                          # Check if there are no tracks in the GPX file
+        print("No tracks available to display.")                                            
+        return                                          
+
+    track_names = [track.name for track in gpx_file.tracks]                                                          # looks for the names of the tracks in the GPX file and printes them
+    print("Available Tracks:")                                          
+    for i, name in enumerate(track_names, start=1):                                                                  # gives them a number to select them
+        print(f"{i}. {name}")                                           
+    track_index = input("Select a track by number (or 'q' to quit): ")                                          
+    if track_index.lower() == 'q':                                                                                   # gives the user the option to exit the track display by typing 'q' 
+        print("Exiting track display.")                                         
+        return                                          
+
+    track = gpx_file.tracks[int(track_index) - 1]                                                                    # saves the selcted track based on the user's input  
+    if not track.segments:                                                                                           # checks if the selected track isnt empty
         print("Selected track has no segments.")
         return
     print(f"Displaying track: {track.name}")
 
     # Create a map centered around the first point of the track
-    start_point = track.segments[0].points[0]
-    m = folium.Map(location=[start_point.latitude, start_point.longitude], zoom_start=13)
+
+    start_point = track.segments[0].points[0]                                                                        # reads in the first point of the track to center the map
+    m = folium.Map(location=[start_point.latitude, start_point.longitude], zoom_start=13)                            # creates a map with folium, using the first point of the track as the center and a zoom level of 13
 
     # Add the track to the map
+
     track_points = [(point.latitude, point.longitude) for segment in track.segments for point in segment.points]
     folium.PolyLine(
         locations=track_points,
@@ -53,15 +62,66 @@ def track_show(gpx_file):
         opacity=1
     ).add_to(m)
 
-    # Save the map to an HTML file
-    m.save('track_map.html')
-    print("Track map saved as 'track_map.html'.")
-    display_map = input("Do you want to open the map in your browser? (yes/no): ")
-    if display_map.lower() == 'yes':
-        webbrowser.open('track_map.html')
-    else:
-        print("Map not opened in browser.")
-        return
+    # Save the HTML file to a specified path
+    while True:
+        cls()
+        print("Do you want to save the HTML file?")
+        print("")
+        print("1. Yes")
+        print("2. No")
+
+        save_choice = input("Please select an option (1-2): ")
+
+        if save_choice == '1':
+            save_path = input("Enter the path where you want to save the HTML file (default is 'track_map.html'): ")
+            if not save_path:
+                save_path = 'track_map.html'
+            if save_path.endswith('.html') or save_path.endswith('.htm'):
+                m.save(save_path)
+                print(f"HTML file saved successfully to {save_path}.")
+                print("You can now close the program or continue editing.")
+                input("Press Enter to return to the menu...")
+                cls()
+                # Open the map in the browser if the user wants to
+                display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0): ")
+                if display_map.lower() == '1':
+                    webbrowser.open(save_path)
+                elif display_map.lower() == '0':
+                    print("Map not opened in browser.")
+                else:
+                    print("Invalid input, map not opened in browser.")
+                input("Press Enter to return to the menu...")
+                cls()
+                return save_path
+            else:
+                dir_path = save_path
+                if not dir_path.endswith('/') and not dir_path.endswith('\\'):
+                    dir_path += '/'
+                file_name = input("Enter the name of the HTML file (without extension): ")
+                if not file_name.endswith('.html') and not file_name.endswith('.htm'):
+                    file_name += '.html'
+                full_path = os.path.join(dir_path, file_name)
+                m.save(full_path)
+                print(f"HTML file saved successfully to {full_path}.")
+
+                # Open the map in the browser if the user wants to
+
+                display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0):")
+                if display_map.lower() == '1':
+                    webbrowser.open(full_path)
+                elif display_map.lower() == '0':
+                    print("Map not opened in browser.")
+                else:
+                    print("Invalid input, map not opened in browser.")
+                input("Press Enter to return to the menu...")
+                cls()
+                return full_path
+        elif save_choice == '2':
+            print("Save operation canceled.")
+            cls()
+            break
+        else:
+            print("Invalid selection, please try again.")
 
 def route_show(gpx_file):
     if not gpx_file.routes:
@@ -96,11 +156,58 @@ def route_show(gpx_file):
     ).add_to(m)
 
     # Save the map to an HTML file
-    m.save('route_map.html')
-    print("Route map saved as 'route_map.html'.")
-    display_map = input("Do you want to open the map in your browser? (yes/no): ")
-    if display_map.lower() == 'yes':
-        webbrowser.open('route_map.html')
-    else:
-        print("Map not opened in browser.")
-        return
+    while True:
+        cls()
+        print("Do you want to save the HTML file?")
+        print("")
+        print("1. Yes")
+        print("2. No")
+
+        save_choice = input("Please select an option (1-2): ")
+
+        if save_choice == '1':
+            save_path = input("Enter the path where you want to save the HTML file (default is 'route_map.html'): ")
+            if not save_path:
+                save_path = 'route_map.html'
+            if save_path.endswith('.html') or save_path.endswith('.htm'):
+                m.save(save_path)
+                print(f"HTML file saved successfully to {save_path}.")
+                # Open the map in the browser if the user wants to
+                display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0): ")
+                if display_map.lower() == '1':
+                    webbrowser.open(save_path)
+                elif display_map.lower() == '0':
+                    print("Map not opened in browser.")
+                else:
+                    print("Invalid input, map not opened in browser.")
+
+                input("Press Enter to return to the menu...")
+                cls()
+                return save_path
+            else:
+                dir_path = save_path
+                if not dir_path.endswith('/') and not dir_path.endswith('\\'):
+                    dir_path += '/'
+                file_name = input("Enter the name of the HTML file (without extension): ")
+                if not file_name.endswith('.html') and not file_name.endswith('.htm'):
+                    file_name += '.html'
+                full_path = os.path.join(dir_path, file_name)
+                m.save(full_path)
+                print(f"HTML file saved successfully to {full_path}.")
+                # Open the map in the browser if the user wants to
+                display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0): ") 
+                if display_map.lower() == '1':
+                    webbrowser.open(full_path)
+                elif display_map.lower() == '0':
+                    print("Map not opened in browser.")
+
+                input("Press Enter to return to the menu...")
+                cls()
+                return full_path
+        elif save_choice == '2':
+            print("Save operation canceled.")
+            cls()
+            break
+        else:
+            print("Invalid selection, please try again.")
+            cls()

@@ -2,7 +2,7 @@ import os
 
 from commands import cls
 from Waypoints import waypoints_menu
-from print_file import print_pdf
+from print_file import converter_function
 from print_file import print_gpx
 from Routes import routes_menu
 from Tracks import tracks_menu
@@ -22,6 +22,7 @@ def GPX_Menu(gpx_file):
         print("6. Save GPX File")
         print("7. Print GPX File to PDF")
         print("8. Exit")
+
         choice = input("Please select an option (1-8): ")
         if choice == '1':
             print("You want to show the GPX file.")
@@ -42,11 +43,11 @@ def GPX_Menu(gpx_file):
             grafic(gpx_file)
         elif choice == '6':
             print("You want to save the GPX file.")
-            gpx_file = save_gpx(gpx_file)
+            save_gpx(gpx_file)
         elif choice == '7':
             print("You want to print the GPX file to PDF.")
             # Print the GPX file to PDF
-            print_pdf(gpx_file)
+            converter_function(gpx_file)
         elif choice == '8':
                 while True:
                     # Ask the user if they are sure they want to exit

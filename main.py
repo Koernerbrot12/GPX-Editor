@@ -8,7 +8,7 @@ def main():
 
     while True:
         print("1 - Import GPX file")
-        print("2. Create new GPX file")
+        print("2 - Create new GPX file")
         print("0 - Exit")
         choice = input("Please select an option (1-2-0): ")
         if choice == '1':
