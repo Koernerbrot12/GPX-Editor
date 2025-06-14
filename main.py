@@ -7,6 +7,7 @@ def main():
     print("Welcome to the GPX Editor 2.0!")
 
     while True:
+        cls()
         print("1 - Import GPX file")
         print("2 - Create new GPX file")
         print("0 - Exit")
