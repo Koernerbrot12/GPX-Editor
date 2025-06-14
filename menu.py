@@ -5,6 +5,7 @@ from Waypoints import waypoints_menu
 from print_file import print_pdf
 from print_file import print_gpx
 from Routes import routes_menu
+from grafic import grafic
 
 
 def GPX_Menu(gpx_file):
@@ -16,10 +17,11 @@ def GPX_Menu(gpx_file):
         print("2. Waypoints menu")
         print("3. Track menu")
         print("4. Route menu")
-        print("5. Save GPX File")
-        print("6. Print GPX File to PDF")
-        print("7. Exit")
-        choice = input("Please select an option (1-7): ")
+        print("5. Show track or route on a map")
+        print("6. Save GPX File")
+        print("7. Print GPX File to PDF")
+        print("8. Exit")
+        choice = input("Please select an option (1-8): ")
         if choice == '1':
             print("You want to show the GPX file.")
             print_gpx(gpx_file)
@@ -33,13 +35,17 @@ def GPX_Menu(gpx_file):
             print("Route menu selected.")
             routes_menu(gpx_file)
         elif choice == '5':
+            print("You want to show the track or route on a map.")
+            # Display the chosen Route or Track on a map
+            grafic(gpx_file)
+        elif choice == '6':
             print("You want to save the GPX file.")
             gpx_file = save_gpx(gpx_file)
-        elif choice == '6':
+        elif choice == '7':
             print("You want to print the GPX file to PDF.")
             # Print the GPX file to PDF
             print_pdf(gpx_file)
-        elif choice == '7':
+        elif choice == '8':
                 while True:
                     # Ask the user if they are sure they want to exit
                     cls()
