@@ -1,6 +1,7 @@
 import gpxpy
 from commands import cls
 
+# With the help of the library gpxpy, the waypoints are easy to find and manage.
 def waypoints_menu(gpx):
 
     # This function displays the waypoints menu and allows the user to manage waypoints in the GPX file.
