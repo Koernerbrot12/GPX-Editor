@@ -29,7 +29,8 @@ def track_show(gpx_file):
     # This function displays the available tracks in the GPX file and allows the user to select one to display on a map.
 
     if not gpx_file.tracks:                                                                                          # Check if there are no tracks in the GPX file
-        print("No tracks available to display.")                                            
+        print("No tracks available to display.")
+        input("Press Enter to return to the menu...")                                            
         return                                          
 
     track_names = [track.name for track in gpx_file.tracks]                                                          # looks for the names of the tracks in the GPX file and printes them
@@ -126,6 +127,7 @@ def track_show(gpx_file):
 def route_show(gpx_file):
     if not gpx_file.routes:
         print("No routes available to display.")
+        input("Press Enter to return to the menu...")
         return
     
     route_names = [route.name for route in gpx_file.routes]

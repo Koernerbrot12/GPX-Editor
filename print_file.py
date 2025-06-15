@@ -1,5 +1,6 @@
 from fpdf import FPDF
 import gpxpy
+from commands import cls
 
 
 def converter_function(file_or_gpx):
@@ -23,8 +24,44 @@ def converter_function(file_or_gpx):
 
     pdf.output("output.pdf")
 
-def print_gpx(gpx_to_print):
+def print_gpx(gpx):
     # Print the contents of a GPX file to the console.
-    print(gpx_to_print)
+    cls()
+    print("GPX File Contents:\n")
+
+    print("Waypoints:")
+    if gpx.waypoints:
+        for waypoint in gpx.waypoints:
+            print(f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}")
+
+    if not gpx.waypoints:
+        # Check if there are no waypoints in the GPX file
+        print("No waypoints found in the GPX file.")
+
+    print("End of waypoints.\n")
+
+    print("Tracks:")
+    if gpx.tracks:
+        for track in gpx.tracks:
+            print(f"Name: {track.name}, Number of Segments: {len(track.segments)}")
+            for segment_idx, segment in enumerate(track.segments):
+                print(f"  Segment {segment_idx + 1}, Number of Points: {len(segment.points)}")
+                for point in segment.points:
+                    print(f"  - {point.name if point.name else 'Unnamed'} (Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation})")
+    else:
+        print("No tracks found in the GPX file.")
+
+    print("End of tracks.\n")
+
+    print("Routes:")
+    if gpx.routes:
+        for route in gpx.routes:
+            print(f"Name: {route.name}, Number of Points: {len(route.points)}")
+            for point in route.points:
+                print(f"- {point.name} (Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation})")
+    else:
+        print("No routes found in the GPX file.")
+
     print("\nEnd of file.")
+
     input("Press Enter to return to the menu...")
