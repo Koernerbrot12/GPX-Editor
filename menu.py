@@ -80,7 +80,7 @@ def save_gpx(file):
 
     while True:
         cls()
-        print("Are you sure you want to save the GPX file? (this will overwrite the existing file)")
+        print("Are you sure you want to save the GPX file?")
         print("")
         print("1. Yes")
         print("2. No")
