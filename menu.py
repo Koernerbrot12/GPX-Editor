@@ -1,4 +1,5 @@
 import os
+import errno
 
 from commands import cls
 from Waypoints import waypoints_menu
@@ -75,23 +76,26 @@ def GPX_Menu(gpx_file):
 
 def save_gpx(file):
 
-    #save the GPX file to a specified path
+    # Save the GPX file to a specified path
+
     while True:
-                cls()
-                print("Are you sure you want to save the GPX file? (this will overwrite the existing file)")
-                print("")
+        cls()
+        print("Are you sure you want to save the GPX file? (this will overwrite the existing file)")
+        print("")
+        print("1. Yes")
+        print("2. No")
 
-                print("1. Yes")
-                print("2. No")
+        save_choice = input("Please select an option (1-2): ")
 
-                save_choice = input("Please select an option (1-2): ")
-
-                if save_choice == '1':
-                    save_path = input("Enter the path where you want to save the GPX file (default is 'output.gpx'): ")
-                    if not save_path:
-                        save_path = 'output.gpx'
-                    if save_path.endswith('.gpx') or save_path.endswith('.xml'):
-                        gpx_file_str = file.to_xml()
+        if save_choice == '1':
+            while True:
+                save_path = input("Enter the path where you want to save the GPX file (default is 'output.gpx'): ").strip().strip('"').strip("'")
+                if not save_path:
+                    save_path = 'output.gpx'
+                # Case 1: User entered a full filename
+                if save_path.endswith('.gpx') or save_path.endswith('.xml'):
+                    gpx_file_str = file.to_xml()
+                    try:
                         with open(save_path, 'w') as f:
                             f.write(gpx_file_str)
                         print(f"GPX file saved successfully to {save_path}.")
@@ -99,15 +103,20 @@ def save_gpx(file):
                         input("Press Enter to return to the menu...")
                         cls()
                         return save_path
-                    if not save_path.endswith('.gpx') and not save_path.endswith('.xml'):
-                        dir_path = save_path
-                        if not dir_path.endswith('/') and not dir_path.endswith('\\'):
-                            dir_path += '/'
-                        file_name = input("Enter the name of the GPX file (without extension): ")
-                        if not file_name.endswith('.gpx') and not file_name.endswith('.xml'):
-                            file_name += '.gpx'
-                        full_path = os.path.join(dir_path, file_name)
-                        gpx_file_str = file.to_xml()
+                    except OSError as e:
+                        print(f"Error saving file: {e.strerror}. Please try again with a valid path.")
+                        continue
+                # Case 2: User entered a directory
+                else:
+                    dir_path = save_path
+                    if not dir_path.endswith('/') and not dir_path.endswith('\\'):
+                        dir_path += '/'
+                    file_name = input("Enter the name of the GPX file (without extension): ").strip().strip('"').strip("'")
+                    if not file_name.endswith('.gpx') and not file_name.endswith('.xml'):
+                        file_name += '.gpx'
+                    full_path = os.path.join(dir_path, file_name)
+                    gpx_file_str = file.to_xml()
+                    try:
                         with open(full_path, 'w') as f:
                             f.write(gpx_file_str)
                         print(f"GPX file saved successfully to {full_path}.")
@@ -115,9 +124,12 @@ def save_gpx(file):
                         input("Press Enter to return to the menu...")
                         cls()
                         return full_path
-                elif save_choice == '2':
-                    print("Save operation canceled.")
-                    cls()
-                    break
-                else:
-                    print("Invalid selection, please try again.")
+                    except OSError as e:
+                        print(f"Error saving file: {e.strerror}. Please try again with a valid path.")
+                        continue
+        elif save_choice == '2':
+            print("Save operation canceled.")
+            cls()
+            break
+        else:
+            print("Invalid selection, please try again.")
