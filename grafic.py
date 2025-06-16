@@ -40,8 +40,10 @@ def track_show(gpx_file):
     track_index = input("Select a track by number (or 'q' to quit): ")                                          
     if track_index.lower() == 'q':                                                                                   # gives the user the option to exit the track display by typing 'q' 
         print("Exiting track display.")                                         
-        return                                          
-
+        return                                         
+    if not track_index.isdigit() or int(track_index) < 1 or int(track_index) > len(gpx_file.tracks):                # checks if the input is a number and if it is in the range of the available tracks
+        print("Invalid track selection. Please enter a valid number.")
+        return
     track = gpx_file.tracks[int(track_index) - 1]                                                                    # saves the selcted track based on the user's input  
     if not track.segments:                                                                                           # checks if the selected track isnt empty
         print("Selected track has no segments.")
