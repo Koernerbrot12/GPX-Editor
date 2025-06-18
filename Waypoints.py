@@ -149,6 +149,7 @@ def add_waypoint(gpx):
      
      new_waypoint = gpxpy.gpx.GPXWaypoint(latitude, longitude, elevation=elevation, name=name)
      gpx.waypoints.append(new_waypoint)
+
      
      print(f"Waypoint '{name}' added successfully.")
      input("Press Enter to return to the waypoints menu...")
@@ -180,12 +181,12 @@ def update_waypoint(gpx):
      name = input("Enter the name of the waypoint to update: ")
      
      for waypoint in gpx.waypoints:
-         if waypoint.name == name:
+         if waypoint.name == name: # Check if the waypoint exists
              new_name = input("Enter the new name (or press Enter to keep the same): ") or waypoint.name
              while True:
-                 try:
+                 try: # Ensure latitude is a float and within valid range
                      new_latitude = input("Enter the new latitude (or press Enter to keep the same): ")
-                     if new_latitude == "":
+                     if new_latitude == "": 
                          new_latitude = waypoint.latitude
                      else:
                          new_latitude = float(new_latitude)
@@ -196,7 +197,7 @@ def update_waypoint(gpx):
                  except ValueError:
                      print("Invalid input. Please enter a valid latitude.")
              while True:
-                 try:
+                 try: # Ensure longitude is a float and within valid range
                      new_longitude = input("Enter the new longitude (or press Enter to keep the same): ")
                      if new_longitude == "":
                          new_longitude = waypoint.longitude
@@ -209,7 +210,7 @@ def update_waypoint(gpx):
                  except ValueError:
                      print("Invalid input. Please enter a valid longitude.")
              while True:
-                 try:
+                 try: # Ensure elevation is a float, default to the current value if not provided
                      new_elevation = input("Enter the new elevation (or press Enter to keep the same): ")
                      if new_elevation == "":
                          new_elevation = waypoint.elevation
@@ -218,6 +219,7 @@ def update_waypoint(gpx):
                      break
                  except ValueError:
                      print("Invalid input. Please enter a valid elevation.")
+            # Update the waypoint attributes
              waypoint.name = new_name
              waypoint.latitude = new_latitude
              waypoint.longitude = new_longitude
