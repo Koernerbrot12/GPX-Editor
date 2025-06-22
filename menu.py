@@ -10,7 +10,10 @@ from Tracks import tracks_menu
 from grafic import grafic
 
 
+
 def GPX_Menu(gpx_file):
+
+    #Simple Menu with a if else loop to select the different functions of the GPX Editor
    
     while True:
         cls()
@@ -27,8 +30,7 @@ def GPX_Menu(gpx_file):
         choice = input("Please select an option (1-8): ")
         if choice == '1':
             print("You want to show the GPX file.")
-            print_gpx(gpx_file)
-            
+            print_gpx(gpx_file) 
         elif choice == '2':
             print("Waypoints menu selected.")
             waypoints_menu(gpx_file)
@@ -40,18 +42,18 @@ def GPX_Menu(gpx_file):
             routes_menu(gpx_file)
         elif choice == '5':
             print("You want to show the track or route on a map.")
-            # Display the chosen Route or Track on a map
             grafic(gpx_file)
         elif choice == '6':
             print("You want to save the GPX file.")
             save_gpx(gpx_file)
         elif choice == '7':
             print("You want to print the GPX file to PDF.")
-            # Print the GPX file to PDF
             converter_function(gpx_file)
         elif choice == '8':
                 while True:
+
                     # Ask the user if they are sure they want to exit
+                    
                     cls()
                     print("Exiting the menu are you sure? (all unsaved data will be lost!)")
                     print("")
@@ -61,9 +63,14 @@ def GPX_Menu(gpx_file):
                     exit_choice = input("Please select an option (1-2): ")
 
                     if exit_choice == '1':
+
+                        # Needs to be imported here to avoid circular import issues
+
+                        import main as main_menu
+
                         print("Exiting the menu.")
                         cls()
-                        return
+                        main_menu.main()
                     elif exit_choice == '2':
                         print("canceled")
                         cls()
@@ -92,9 +99,14 @@ def save_gpx(file):
                 save_path = input("Enter the path where you want to save the GPX file (default is 'output.gpx'): ").strip().strip('"').strip("'")
                 if not save_path:
                     save_path = 'output.gpx'
+
                 # Case 1: User entered a full filename
+
                 if save_path.endswith('.gpx') or save_path.endswith('.xml'):
                     gpx_file_str = file.to_xml()
+
+                    # With try we ensure that the file can be saved without errors
+
                     try:
                         with open(save_path, 'w') as f:
                             f.write(gpx_file_str)
@@ -106,7 +118,9 @@ def save_gpx(file):
                     except OSError as e:
                         print(f"Error saving file: {e.strerror}. Please try again with a valid path.")
                         continue
+                    
                 # Case 2: User entered a directory
+
                 else:
                     dir_path = save_path
                     if not dir_path.endswith('/') and not dir_path.endswith('\\'):
@@ -116,6 +130,9 @@ def save_gpx(file):
                         file_name += '.gpx'
                     full_path = os.path.join(dir_path, file_name)
                     gpx_file_str = file.to_xml()
+
+                    # With try we ensure that the file can be saved without errors
+
                     try:
                         with open(full_path, 'w') as f:
                             f.write(gpx_file_str)

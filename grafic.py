@@ -7,7 +7,9 @@ import os
 def grafic(gpx_file):
 
     while True:
-        # User chooces to show a track or route on the map
+
+        # small menu to give the user the option to show a track or a route
+
         cls()
         print("1. Show track on map")
         print("2. Show route on map")
@@ -26,26 +28,43 @@ def grafic(gpx_file):
         cls()
             
 def track_show(gpx_file):
+
     # This function displays the available tracks in the GPX file and allows the user to select one to display on a map.
 
-    if not gpx_file.tracks:                                                                                          # Check if there are no tracks in the GPX file
+    #first checks if the GPX file has any tracks available to display
+
+    if not gpx_file.tracks:                                                                                          
         print("No tracks available to display.")
         input("Press Enter to return to the menu...")                                            
-        return                                          
+        return
+                                              
+    # looks for the names of the tracks in the GPX file and printes them
 
-    track_names = [track.name for track in gpx_file.tracks]                                                          # looks for the names of the tracks in the GPX file and printes them
-    print("Available Tracks:")                                          
-    for i, name in enumerate(track_names, start=1):                                                                  # gives them a number to select them
-        print(f"{i}. {name}")                                           
+    track_names = [track.name for track in gpx_file.tracks]                                                          
+    print("Available Tracks:")
+
+    # gives them a number to select them
+                                             
+    for i, name in enumerate(track_names, start=1):                                                                  
+        print(f"{i}. {name}")
+
+    # gives the user the option to exit the track display by typing 'q'
+                                     
     track_index = input("Select a track by number (or 'q' to quit): ")                                          
-    if track_index.lower() == 'q':                                                                                   # gives the user the option to exit the track display by typing 'q' 
+    if track_index.lower() == 'q':                                                                                    
         print("Exiting track display.")                                         
-        return                                         
-    if not track_index.isdigit() or int(track_index) < 1 or int(track_index) > len(gpx_file.tracks):                # checks if the input is a number and if it is in the range of the available tracks
+        return
+    
+    # checks if the input is a number and if it is in the range of the available tracks
+                                             
+    if not track_index.isdigit() or int(track_index) < 1 or int(track_index) > len(gpx_file.tracks):
         print("Invalid track selection. Please enter a valid number.")
         return
-    track = gpx_file.tracks[int(track_index) - 1]                                                                    # saves the selcted track based on the user's input  
-    if not track.segments:                                                                                           # checks if the selected track isnt empty
+    
+    # saves the selcted track based on the user's input and checks if the selected track isnt empty
+
+    track = gpx_file.tracks[int(track_index) - 1]                                                                     
+    if not track.segments:                                                                                           
         print("Selected track has no segments.")
         return
     print(f"Displaying track: {track.name}")
@@ -55,7 +74,7 @@ def track_show(gpx_file):
     start_point = track.segments[0].points[0]                                                                        # reads in the first point of the track to center the map
     m = folium.Map(location=[start_point.latitude, start_point.longitude], zoom_start=13)                            # creates a map with folium, using the first point of the track as the center and a zoom level of 13
 
-    # Add the track to the map
+    # Add the track and his points in a segment to the map
 
     track_points = [(point.latitude, point.longitude) for segment in track.segments for point in segment.points]
     folium.PolyLine(
@@ -65,7 +84,8 @@ def track_show(gpx_file):
         opacity=1
     ).add_to(m)
 
-    # Save the HTML file to a specified path
+    # saving the map to an HTML file for later use or display
+
     while True:
         cls()
         print("Do you want to save the HTML file?")
@@ -85,7 +105,9 @@ def track_show(gpx_file):
                 print("You can now close the program or continue editing.")
                 input("Press Enter to return to the menu...")
                 cls()
-                # Open the map in the browser if the user wants to
+
+                # asks the user if he wants to open the map in the browser
+
                 display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0): ")
                 if display_map.lower() == '1':
                     webbrowser.open(save_path)
@@ -107,7 +129,7 @@ def track_show(gpx_file):
                 m.save(full_path)
                 print(f"HTML file saved successfully to {full_path}.")
 
-                # Open the map in the browser if the user wants to
+                # asks the user if he wants to open the map in the browser
 
                 display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0):")
                 if display_map.lower() == '1':
@@ -127,6 +149,9 @@ def track_show(gpx_file):
             print("Invalid selection, please try again.")
 
 def route_show(gpx_file):
+
+    # This function operates similarly to the track_show function, but it displays routes instead of tracks.
+    
     if not gpx_file.routes:
         print("No routes available to display.")
         input("Press Enter to return to the menu...")
@@ -148,10 +173,12 @@ def route_show(gpx_file):
     print(f"Displaying route: {route.name}")
 
     # Create a map centered around the first point of the route
-    start_point = route.points[0]
-    m = folium.Map(location=[start_point.latitude, start_point.longitude], zoom_start=13)
+
+    start_point = route.points[0]                                                               # reads in the first point of the route to center the map   
+    m = folium.Map(location=[start_point.latitude, start_point.longitude], zoom_start=13)       # creates a map on the first point of the route
 
     # Add the route to the map
+
     folium.PolyLine(
         locations=[(point.latitude, point.longitude) for point in route.points],
         color='green',
@@ -159,7 +186,8 @@ def route_show(gpx_file):
         opacity=1
     ).add_to(m)
 
-    # Save the map to an HTML file
+    # saving the map to an HTML file for later use or display
+
     while True:
         cls()
         print("Do you want to save the HTML file?")
@@ -176,7 +204,9 @@ def route_show(gpx_file):
             if save_path.endswith('.html') or save_path.endswith('.htm'):
                 m.save(save_path)
                 print(f"HTML file saved successfully to {save_path}.")
-                # Open the map in the browser if the user wants to
+
+                # asks the user if he wants to open the map in the browser
+
                 display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0): ")
                 if display_map.lower() == '1':
                     webbrowser.open(save_path)
@@ -198,7 +228,9 @@ def route_show(gpx_file):
                 full_path = os.path.join(dir_path, file_name)
                 m.save(full_path)
                 print(f"HTML file saved successfully to {full_path}.")
-                # Open the map in the browser if the user wants to
+
+                # asks the user if he wants to open the map in the browser
+
                 display_map = input("Do you want to open the map in your browser? \n1. yes \n0. no \nPlease select an option (1-0): ") 
                 if display_map.lower() == '1':
                     webbrowser.open(full_path)

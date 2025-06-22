@@ -5,12 +5,18 @@ from commands import cls
 
 
 def converter_function(file_or_gpx):
-    # If a string is passed, treat it as a file path and parse it
+
+    #The creation of PDF files works with the fpdf Library
+
+    # checking if the file is a string or a already parsed object
+
     if isinstance(file_or_gpx, str):
         with open(file_or_gpx, 'r') as gpx_file:
             gpx = gpxpy.parse(gpx_file)
     else:
-        gpx = file_or_gpx  # Assume it's already a GPX object
+        gpx = file_or_gpx  
+    
+    # Creates a default PDF document
 
     pdf = FPDF()
     pdf.add_page()
@@ -18,9 +24,13 @@ def converter_function(file_or_gpx):
     pdf.cell(200, 10, txt="GPX Waypoints", ln=True, align='C')
     pdf.ln(10)
 
-    # Add GPX data to PDF
+    # Add GPX data to PDF 
+
     pdf.set_font("Arial", size=12)
     pdf.cell(0, 10, "Waypoints:", ln=True)
+
+    # Waypoints data
+
     if gpx.waypoints:
         for waypoint in gpx.waypoints:
             wp_text = f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}"
@@ -32,6 +42,9 @@ def converter_function(file_or_gpx):
     pdf.ln(5)
 
     pdf.cell(0, 10, "Tracks:", ln=True)
+
+    # Tracks data
+
     if gpx.tracks:
         for track in gpx.tracks:
             track_text = f"Name: {track.name}, Number of Segments: {len(track.segments)}"
@@ -49,6 +62,9 @@ def converter_function(file_or_gpx):
     pdf.ln(5)
 
     pdf.cell(0, 10, "Routes:", ln=True)
+
+    # Routes data
+
     if gpx.routes:
         for route in gpx.routes:
             route_text = f"Name: {route.name}, Number of Points: {len(route.points)}"
@@ -64,6 +80,8 @@ def converter_function(file_or_gpx):
 
     pdf.cell(0, 10, "End of file.", ln=True)
 
+    # The save operation we also use for the gpx file and the html file
+
     print("Where do you want to save the PDF file?")
     while True:
         cls()
@@ -72,16 +90,38 @@ def converter_function(file_or_gpx):
         print("3. Cancel save operation")
 
         save_choice = input("Please select an option (1-2-3): ")
+
+        # Saving to the default directory
+
         if save_choice == '1':
             pdf_file_path = 'output.pdf'
-            pdf.output(pdf_file_path)
-            print(f"PDF file saved successfully to {pdf_file_path}.")
-            print("You can now close the program or continue editing.")
-            input("Press Enter to return to the menu...")
-            cls()
-            return pdf_file_path
+            try:
+                pdf.output(pdf_file_path)
+                print(f"PDF file saved successfully to {pdf_file_path}.")
+                print("You can now close the program or continue editing.")
+                input("Press Enter to return to the menu...")
+                cls()
+                return pdf_file_path
+            except OSError as e:
+                print(f"Error saving file: {e.strerror}. Please try again with a valid path.")
+                continue
+        
+        # Saving to a specified directory, that the user can choose
+
         elif save_choice == '2':
             dir_path = input("Enter the directory path where you want to save the PDF file: ")
+            if dir_path.endswith('.pdf'):
+                full_pdf_path = dir_path
+                try:
+                    pdf.output(full_pdf_path)
+                    print(f"PDF file saved successfully to {full_pdf_path}.")
+                    print("You can now close the program or continue editing.")
+                    input("Press Enter to return to the menu...")
+                    cls()
+                    return full_pdf_path
+                except OSError as e:
+                    print(f"Error saving file: {e.strerror}. Please try again with a valid path.")
+                    continue
             if not dir_path.endswith('/') and not dir_path.endswith('\\'):
                 dir_path += '/'
             pdf_file_name = input("Enter the name of the PDF file (without extension): ")
@@ -108,9 +148,13 @@ def converter_function(file_or_gpx):
     pdf.output("output.pdf")
 
 def print_gpx(gpx):
-    # Print the contents of a GPX file to the console.
+
+    # Print the contents of a GPX file to the console
+
     cls()
     print("GPX File Contents:\n")
+    
+    # Content of Waypoints
 
     print("Waypoints:")
     if gpx.waypoints:
@@ -118,10 +162,11 @@ def print_gpx(gpx):
             print(f"Name: {waypoint.name}, Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation}, Timestamp: {waypoint.time}")
 
     if not gpx.waypoints:
-        # Check if there are no waypoints in the GPX file
         print("No waypoints found in the GPX file.")
 
     print("End of waypoints.\n")
+
+    # Content of Tracks
 
     print("Tracks:")
     if gpx.tracks:
@@ -135,6 +180,8 @@ def print_gpx(gpx):
         print("No tracks found in the GPX file.")
 
     print("End of tracks.\n")
+
+    # Content of Routes
 
     print("Routes:")
     if gpx.routes:
