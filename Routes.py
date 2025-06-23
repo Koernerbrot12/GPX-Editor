@@ -5,6 +5,9 @@ def routes_menu(gpx):
 
 
     while True:
+        # This function displays the routes menu and allows the user to manage routes in the GPX file.
+        # It provides options to show, add, delete, and update routes.
+
 
         cls()
         print("Routes Menu")
@@ -45,9 +48,9 @@ def print_routes(gpx):
     input("Press Enter to return to the routes menu...")
 
 def add_route(gpx):
-    """
-    This function allows the user to add a route to the GPX file.
-    """
+    
+    #This function allows the user to add a route to the GPX file using existing waypoints.
+    
     cls()
     route_name = input("Enter the name of the route: ")
     if route_name == "":
@@ -58,39 +61,37 @@ def add_route(gpx):
         return
     route = gpxpy.gpx.GPXRoute(name=route_name)
     
-    # Print available waypoints
+    # Print available waypoints with numbers
     if not gpx.waypoints:
         print("No waypoints available to add to the route.")
         input("Press Enter to return to the routes menu...")
         return
     print("Available Waypoints:")
-    for waypoint in gpx.waypoints:
-        print(f"- {waypoint.name} (Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation})")
+    for idx, waypoint in enumerate(gpx.waypoints, start=1):
+        print(f"{idx}. {waypoint.name} (Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation})")
 
     while True:
-        route_point_name = input("Enter a waypoint name to add to the route (or type 'done' when finished): ")
-        if route_point_name.lower() == 'done':
+        selection = input("Enter the number of the waypoint to add to the route (or type 'done' when finished): ")
+        if selection.lower() == 'done':
             break
 
-        found = False
-        for waypoint in gpx.waypoints:
-            if waypoint.name == route_point_name:
-                route.points.append(waypoint)  # Append the waypoint object itself
-                print(f"Waypoint '{route_point_name}' added to Route '{route_name}' successfully.")
-                found = True
-                break
-        if not found:
-            print(f"Waypoint '{route_point_name}' not found.")
-        
-    
+        if not selection.isdigit() or not (1 <= int(selection) <= len(gpx.waypoints)):
+            print("Invalid selection. Please enter a valid number.")
+            continue
+
+        idx = int(selection) - 1
+        waypoint = gpx.waypoints[idx]
+        route.points.append(waypoint)
+        print(f"Waypoint '{waypoint.name}' added to Route '{route_name}' successfully.")
+
     gpx.routes.append(route)
     print(f"Route '{route_name}' added successfully.")
     input("Press Enter to return to the routes menu...")
 
 def delete_route(gpx):
-    """
-    This function allows the user to delete a route from the GPX file.
-    """
+    
+    #This function allows the user to delete a route from the GPX file.
+    
     cls()
     if not gpx.routes:
         print("No routes available to delete.")
@@ -184,108 +185,125 @@ def change_route_name(gpx, route):
     
     input("Press Enter to return to the update menu...")
 
-def update_route_points(gpx, route): 
 
+def update_route_points(gpx, route):
+    
+    #Allows the user to update the properties of a route point.
+    
     cls()
-    # print the current points in the route
+    # Print the current points in the route with numbers
     if not route.points:
         print("No points in this route to update.")
         input("Press Enter to return to the update menu...")
         return
     print("Current Route Points:")
-    for point in route.points:
-                print(f" Name: {point.name if point.name else 'Unnamed'}, Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation}")
-                 
+    for idx, point in enumerate(route.points, start=1):
+        print(f"{idx}. Name: {point.name if point.name else 'Unnamed'}, Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation}")
 
-    # enter the name of the waypoint to update
-    waypoint_name = input("Enter the name of the waypoint to update (or type 'cancel' to cancel): ")
-    if waypoint_name.lower() == 'cancel':
+    selection = input("Enter the number of the waypoint to update (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
         print("Update cancelled.")
         input("Press Enter to return to the update menu...")
         return
-    found = False
-    for point in route.points:
-        if point.name == waypoint_name:
-            found = True
-            # update the point's latitude, longitude, and elevation, or keeo current values if the user presses Enter without inputting a new value
-            point.name = str(input("Enter new name for the waypoint (or press Enter to keep current name): ") or point.name)
-            waypoint_name = point.name  # Update the name variable to reflect the new name
-            point.latitude = float(input("Enter new latitude: ") or point.latitude) 
-            point.longitude = float(input("Enter new longitude: ") or point.longitude)
-            point.elevation = float(input("Enter new elevation: ") or point.elevation)
-            print(f"Waypoint '{waypoint_name}' updated successfully.")
-            break
-    if not found:
-        print(f"Waypoint '{waypoint_name}' not found in the route.")
+
+    if not selection.isdigit() or not (1 <= int(selection) <= len(route.points)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the update menu...")
+        return
+
+    idx = int(selection) - 1
+    point = route.points[idx]
+
+    # Update the point's latitude, longitude, and elevation, or keep current values if the user presses Enter without inputting a new value
+    point.name = str(input("Enter new name for the waypoint (or press Enter to keep current name): ") or point.name)
+    point.latitude = float(input("Enter new latitude: ") or point.latitude)
+    point.longitude = float(input("Enter new longitude: ") or point.longitude)
+    point.elevation = float(input("Enter new elevation: ") or point.elevation)
+    print(f"Waypoint '{point.name}' updated successfully.")
+
     input("Press Enter to return to the update menu...")
 
-
 def insert_route_point(gpx, route):
+    
+    #Allows the user to insert a waypoint into the route at a specified position.
+   
     cls()
-    # This function allows the user to insert a new waypoint into the route and let them choose where to insert it, the waypoint has to be added before, in the waypoints menu.
-    #
+    # Check if there are waypoints to insert
     if not gpx.waypoints:
         print("No waypoints available to add to the route.")
         input("Press Enter to return to the update menu...")
         return
+
     print("Available Waypoints:")
-    for waypoint in gpx.waypoints:
-        print(f"- {waypoint.name} (Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation})")
-    waypoint_name = input("Enter the name of the waypoint to insert into the route (or type 'cancel' to cancel): ")
-    if waypoint_name.lower() == 'cancel':
+    for idx, waypoint in enumerate(gpx.waypoints, start=1):
+        print(f"{idx}. {waypoint.name} (Latitude: {waypoint.latitude}, Longitude: {waypoint.longitude}, Elevation: {waypoint.elevation})")
+
+    selection = input("Enter the number of the waypoint to insert into the route (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
         print("Insertion cancelled.")
         input("Press Enter to return to the update menu...")
         return
-    found = False
-    # Now the routepoints are printed, the user can choose where to insert the new waypoint, "start" will insert it at the beginning, "end" will insert it at the end, and any other waypoint name will insert it after that position.
-    for waypoint in gpx.waypoints:
-        if waypoint.name == waypoint_name:
-            found = True
-            position = input("Enter the position to insert the waypoint (start, end, or after a specific waypoint name): ")
-            if position.lower() == 'start':
-                route.points.insert(0, waypoint)
-                print(f"Waypoint '{waypoint_name}' inserted at the start of the route.")
-            elif position.lower() == 'end':
-                route.points.append(waypoint)
-                print(f"Waypoint '{waypoint_name}' inserted at the end of the route.")
-            else:
-                for i, point in enumerate(route.points):
-                    if point.name == position:
-                        route.points.insert(i + 1, waypoint)
-                        print(f"Waypoint '{waypoint_name}' inserted after '{position}'.")
-                        break
-                else:
-                    print(f"Waypoint '{position}' not found in the route. Insertion failed.")
-            break
-    if not found:
-        print(f"Waypoint '{waypoint_name}' not found in the GPX file. Insertion failed.")
+
+    if not selection.isdigit() or not (1 <= int(selection) <= len(gpx.waypoints)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the update menu...")
+        return
+
+    waypoint = gpx.waypoints[int(selection) - 1]
+
+    # Show current route points with numbers for position selection
+    print("Current Route Points:")
+    if not route.points:
+        print("Route is currently empty. The waypoint will be added as the first point.")
+        route.points.append(waypoint)
+        print(f"Waypoint '{waypoint.name}' inserted as the first point in the route.")
+        input("Press Enter to return to the update menu...")
+        return
+
+    for idx, point in enumerate(route.points, start=1):
+        print(f"{idx}. {point.name} (Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation})")
+
+    pos_input = input("Enter the position number to insert before (1 for start, or one past the last number for end): ")
+    if not pos_input.isdigit() or not (1 <= int(pos_input) <= len(route.points) + 1):
+        print("Invalid position. Insertion failed.")
+        input("Press Enter to return to the update menu...")
+        return
+
+    insert_idx = int(pos_input) - 1
+    route.points.insert(insert_idx, waypoint)
+    print(f"Waypoint '{waypoint.name}' inserted at position {insert_idx + 1} in the route.")
+
     input("Press Enter to return to the update menu...")
 
-    
 def delete_route_point(gpx, route):
+   
+    #Allows the user to delete a point from the route.
+    
     cls()
-    # This function allows the user to delete a point from the route.
+    # Check if there are points to delete
     if not route.points:
         print("No points in this route to delete.")
         input("Press Enter to return to the update menu...")
         return
 
     print("Current Route Points:")
-    for point in route.points:
-        print(f"- {point.name} (Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation})")
+    for idx, point in enumerate(route.points, start=1):
+        print(f"{idx}. {point.name} (Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation})")
     
-    point_name = input("Enter the name of the point to delete (or type 'cancel' to cancel): ")
-    if point_name.lower() == 'cancel':
+    selection = input("Enter the number of the point to delete (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
         print("Deletion cancelled.")
         input("Press Enter to return to the update menu...")
         return
-    
-    for point in route.points:
-        if point.name == point_name:
-            route.points.remove(point)
-            print(f"Point '{point_name}' deleted successfully.")
-            break
-    else:
-        print(f"Point '{point_name}' not found in the route.")
-    
-    input("Press Enter to return to the update menu...")
+
+    if not selection.isdigit() or not (1 <= int(selection) <= len(route.points)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the update menu...")
+        return
+
+    idx = int(selection) - 1
+    point = route.points.pop(idx)
+    print(f"Point '{point.name}' deleted successfully.")
+
+    input("Press Enter to return to the update menu...")   
+
