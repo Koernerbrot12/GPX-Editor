@@ -23,8 +23,9 @@ def main():
             print("New GPX file created.")
             GPX_Menu(new_file)
         elif choice == '0':
+            import sys
             print("Exiting the program.")
-            break
+            sys.exit()
 
         else:
             print("Invalid selection, please try again.")

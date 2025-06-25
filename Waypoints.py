@@ -250,7 +250,11 @@ def update_waypoint(gpx):
                  if update_choice == '1':
                      new_time = input("Enter the new timestamp (YYYY-MM-DDTHH:MM:SSZ) or press Enter to keep the same: ")
                      if new_time:
-                         waypoint.time = gpxpy.gpx.GPXTime(new_time)
+                         import datetime
+                         try:
+                             waypoint.time = datetime.datetime.fromisoformat(new_time.replace("Z", "+00:00"))
+                         except Exception:
+                             print("Invalid timestamp format. Please use YYYY-MM-DDTHH:MM:SSZ.")
                  elif update_choice == '2':
                      new_magvar = input("Enter the new magnetic variation (or press Enter to keep the same): ")
                      if new_magvar:
