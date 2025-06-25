@@ -3,6 +3,7 @@ from parser import parser
 from commands import cls
 import gpxpy
 
+
 def main():
 
     # Simple menu to select the sorce of the GPX file or start with a new GPX file
