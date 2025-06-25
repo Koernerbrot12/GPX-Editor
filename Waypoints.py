@@ -320,13 +320,16 @@ def update_waypoint(gpx):
             if new_source:
                 waypoint.source = new_source
         elif update_choice == '7':
-            new_link = input("Enter the new link (or press Enter to keep the same): ")
-            if new_link:
+            while True:
+                new_link = input("Enter the new link (or press Enter to keep the same): ")
+                if not new_link:
+                    break  # Keep the same
                 # Ensure the link is a valid URL
-                if not new_link.startswith("http://") and not new_link.startswith("https://"):
+                if not (new_link.startswith("http://") or new_link.startswith("https://")):
                     print("Invalid link format. Please enter a valid URL starting with http:// or https://.")
-                    return
+                    continue
                 waypoint.link = [new_link]
+                break
         elif update_choice == '8':
             new_symbol = input("Enter the new symbol (or press Enter to keep the same): ")
             if new_symbol:
@@ -336,13 +339,16 @@ def update_waypoint(gpx):
             if new_type:
                 waypoint.type = new_type
         elif update_choice == '10':
-            new_fix = input("Enter the new fix (either 'none', '2d', '3d', 'dgps', 'pps', '3') or press Enter to keep the same: ")
-            if new_fix in ('none', '2d', '3d', 'dgps', 'pps', '3', ""):
-                if new_fix != "":
+            valid_fixes = ('none', '2d', '3d', 'dgps', 'pps', '3')
+            while True:
+                new_fix = input("Enter the new fix (either 'none', '2d', '3d', 'dgps', 'pps', '3') or press Enter to keep the same: ")
+                if new_fix == "":
+                    break  # Keep the same
+                if new_fix in valid_fixes:
                     waypoint.type_of_gpx_fix = new_fix
-            else:
-                print("Invalid fix type. Please enter one of the following: 'none', '2d', '3d', 'dgps', 'pps', '3'.")
-                return
+                    break
+                else:
+                    print("Invalid fix type. Please enter one of the following: 'none', '2d', '3d', 'dgps', 'pps', '3'.")
         elif update_choice == '11':
             while True:
                 new_satellite = input("Enter the new satellite (or press Enter to keep the same): ")
