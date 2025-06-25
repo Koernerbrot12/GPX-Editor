@@ -6,12 +6,16 @@ import gpxpy
 
 def main():
 
-    # Simple menu to select the sorce of the GPX file or start with a new GPX file
+    # This is the start of our programm
+    
     cls()
     print("Welcome to the GPX Editor 2.0!")
     input("Press Enter to start...")
 
     while True:
+
+        # Simple menu to select the sorce of the GPX file or start with a new GPX file
+
         cls()
         print("1 - Import GPX file")
         print("2 - Create new GPX file")
