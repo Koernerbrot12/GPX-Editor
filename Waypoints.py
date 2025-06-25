@@ -1,4 +1,5 @@
 import gpxpy
+import datetime
 from commands import cls
 import menu as gpx_menu
 
@@ -26,12 +27,7 @@ def waypoints_menu(gpx):
         elif choice == '4':
             update_waypoint(gpx)
         elif choice == '5':
-            cls()
-            print("Removing timestamp from all waypoints...")
-            for waypoint in gpx.waypoints:
-                waypoint.time = None
-            print("All timestamps removed successfully.")
-            input("Press Enter to return to the waypoints menu...")
+            remove_timestamp(gpx)
         elif choice == '6':
             cls()
             print("Returning to the main menu...")
@@ -263,13 +259,31 @@ def update_waypoint(gpx):
 
         update_choice = input("Please select an option (1-16) or press Enter to skip: ")
         if update_choice == '1':
-            new_time = input("Enter the new timestamp (YYYY-MM-DDTHH:MM:SSZ) or press Enter to keep the same: ")
-            if new_time:
-                import datetime
+            print("Enter the new timestamp for the waypoint.")
+            print("Accepted formats:")
+            print("  1. YYYY-MM-DDTHH:MM:SSZ (e.g., 2024-06-25T14:30:00Z)")
+            print("  2. YYYY-MM-DD HH:MM:SS (e.g., 2024-06-25 14:30:00)")
+            print("  3. YYYY-MM-DD (date only, time will be set to 00:00:00)")
+            newtimestamp = input("Enter the new timestamp or press Enter to keep the same: ")
+            if newtimestamp:
                 try:
-                    waypoint.time = datetime.datetime.fromisoformat(new_time.replace("Z", "+00:00"))
-                except Exception:
-                    print("Invalid timestamp format. Please use YYYY-MM-DDTHH:MM:SSZ.")
+                    # Try parsing ISO format with Z
+                    if newtimestamp.endswith("Z"):
+                        waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%dT%H:%M:%SZ")
+                    # Try parsing ISO format without Z
+                    elif "T" in newtimestamp:
+                        waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%dT%H:%M:%S")
+                    # Try parsing with space
+                    elif " " in newtimestamp:
+                        waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%d %H:%M:%S")
+                    # Try parsing date only
+                    else:
+                        waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%d")
+                    print("Timestamp updated successfully.")
+                except ValueError:
+                    print("Invalid timestamp format. Please use one of the accepted formats.")
+                    return
+                
         elif update_choice == '2':
             new_magvar = input("Enter the new magnetic variation (or press Enter to keep the same): ")
             if new_magvar:
@@ -376,15 +390,18 @@ def remove_timestamp(gpx):
         print(f"Timestamp removed from waypoint '{gpx.waypoints[idx].name if gpx.waypoints[idx].name else 'Unnamed'}'.")
 
     elif choice == '2':
-        input("This will remove timestamps from all waypoints. Are you sure? (y/n): ").lower()
-        if choice != 'y':
+        choice2=input("This will remove timestamps from all waypoints. Are you sure? (y/n): ").lower()
+        if choice2 == 'y':
+            for waypoint in gpx.waypoints:
+                waypoint.time = None
+            print("Timestamps removed from all waypoints.")
+            input("Press Enter to return to the waypoints menu...")
+            return
+        elif choice2 == 'n':
             print("Operation cancelled.")
             input("Press Enter to return to the waypoints menu...")
             return
         
-        for waypoint in gpx.waypoints:
-            waypoint.time = None
-        print("All timestamps removed from all waypoints.")
     else:
         print("Invalid selection, please try again.")
 
