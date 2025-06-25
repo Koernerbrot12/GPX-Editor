@@ -237,6 +237,10 @@ def update_waypoint(gpx):
     waypoint.elevation = new_elevation
 
     # Ask y/n to see further details to update
+    # This section allows the user to update additional details of the waypoint.
+    #It also checks if the user input is valid and handles exceptions for invalid inputs.
+
+
     print("Do you want to update additional details for this waypoint?")
     additional_details = input("Please select an option (y/n): ").lower()
     if additional_details == 'y':
@@ -283,15 +287,26 @@ def update_waypoint(gpx):
                 except ValueError:
                     print("Invalid timestamp format. Please use one of the accepted formats.")
                     return
-                
         elif update_choice == '2':
-            new_magvar = input("Enter the new magnetic variation (or press Enter to keep the same): ")
-            if new_magvar:
-                waypoint.magnetic_variation = float(new_magvar)
+            while True:
+                new_magvar = input("Enter the new magnetic variation (or press Enter to keep the same): ")
+                if new_magvar == "":
+                    break
+                try:
+                    waypoint.magnetic_variation = float(new_magvar)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
         elif update_choice == '3':
-            new_geoid_height = input("Enter the new geoid height (or press Enter to keep the same): ")
-            if new_geoid_height:
-                waypoint.geoid_height = float(new_geoid_height)
+            while True:
+                new_geoid_height = input("Enter the new geoid height (or press Enter to keep the same): ")
+                if new_geoid_height == "":
+                    break
+                try:
+                    waypoint.geoid_height = float(new_geoid_height)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
         elif update_choice == '4':
             new_comment = input("Enter the new comment (or press Enter to keep the same): ")
             if new_comment:
@@ -322,35 +337,72 @@ def update_waypoint(gpx):
                 waypoint.type = new_type
         elif update_choice == '10':
             new_fix = input("Enter the new fix (either 'none', '2d', '3d', 'dgps', 'pps', '3') or press Enter to keep the same: ")
-            if new_fix in ('none', '2d', '3d', 'dgps', 'pps', '3'):
-                waypoint.type_of_gpx_fix = new_fix
-            elif new_fix != "":
+            if new_fix in ('none', '2d', '3d', 'dgps', 'pps', '3', ""):
+                if new_fix != "":
+                    waypoint.type_of_gpx_fix = new_fix
+            else:
                 print("Invalid fix type. Please enter one of the following: 'none', '2d', '3d', 'dgps', 'pps', '3'.")
                 return
         elif update_choice == '11':
-            new_satellite = input("Enter the new satellite (or press Enter to keep the same): ")
-            if new_satellite:
-                waypoint.satellites = int(new_satellite)
+            while True:
+                new_satellite = input("Enter the new satellite (or press Enter to keep the same): ")
+                if new_satellite == "":
+                    break
+                try:
+                    waypoint.satellites = int(new_satellite)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid integer.")
         elif update_choice == '12':
-            new_hdop = input("Enter the new hdop (or press Enter to keep the same): ")
-            if new_hdop:
-                waypoint.horizontal_dilution = float(new_hdop)
+            while True:
+                new_hdop = input("Enter the new hdop (or press Enter to keep the same): ")
+                if new_hdop == "":
+                    break
+                try:
+                    waypoint.horizontal_dilution = float(new_hdop)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
         elif update_choice == '13':
-            new_vdop = input("Enter the new vdop (or press Enter to keep the same): ")
-            if new_vdop:
-                waypoint.vertical_dilution = float(new_vdop)
+            while True:
+                new_vdop = input("Enter the new vdop (or press Enter to keep the same): ")
+                if new_vdop == "":
+                    break
+                try:
+                    waypoint.vertical_dilution = float(new_vdop)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
         elif update_choice == '14':
-            new_pdop = input("Enter the new pdop (or press Enter to keep the same): ")
-            if new_pdop:
-                waypoint.position_dilution = float(new_pdop)
+            while True:
+                new_pdop = input("Enter the new pdop (or press Enter to keep the same): ")
+                if new_pdop == "":
+                    break
+                try:
+                    waypoint.position_dilution = float(new_pdop)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
         elif update_choice == '15':
-            new_age_of_gps_data = input("Enter the new age of GPS data (or press Enter to keep the same): ")
-            if new_age_of_gps_data:
-                waypoint.age_of_dgps_data = float(new_age_of_gps_data)
+            while True:
+                new_age_of_gps_data = input("Enter the new age of GPS data (or press Enter to keep the same): ")
+                if new_age_of_gps_data == "":
+                    break
+                try:
+                    waypoint.age_of_dgps_data = float(new_age_of_gps_data)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
         elif update_choice == '16':
-            new_dgpsid = input("Enter the new dgpsid (or press Enter to keep the same): ")
-            if new_dgpsid:
-                waypoint.dgps_id = int(new_dgpsid)
+            while True:
+                new_dgpsid = input("Enter the new dgpsid (or press Enter to keep the same): ")
+                if new_dgpsid == "":
+                    break
+                try:
+                    waypoint.dgps_id = int(new_dgpsid)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid integer.")
         else:
             print("No additional details updated or invalid type.")
     elif additional_details == 'n':
