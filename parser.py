@@ -5,7 +5,8 @@ import os
 def parser():
 
     gpx_path = input("Enter the path to the GPX file: ")
-    print(gpx_path)
+    if gpx_path.startswith('"') and gpx_path.endswith('"'):
+        gpx_path = gpx_path[1:-1]
 
     if gpx_path.endswith(".gpx") or gpx_path.endswith(".xml"):
         # Check if the file exists
