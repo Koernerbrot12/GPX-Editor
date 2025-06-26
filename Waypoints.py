@@ -95,6 +95,7 @@ def print_points(gpx):
         return
     else:
         print("Invalid selection, please try again.")
+        input("Press Enter to return to the waypoints menu...")
         return
 
     input("Press Enter to return to the waypoints menu...")
