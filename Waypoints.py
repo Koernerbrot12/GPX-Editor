@@ -105,11 +105,11 @@ def add_waypoint(gpx):
 
      # This function allows the user to add a new waypoint to the GPX file.
      cls()
-     name = input("Enter the name of the waypoint: ")
+     name = input("Enter the name of the waypoint (optional, press Enter to skip): ")
      if name == "":
-         input("Name cannot be empty. Press enter to return.")
-         return
-     if any(waypoint.name == name for waypoint in gpx.waypoints):
+         name = None
+     # Only check for duplicate names if a name is provided
+     if name is not None and any(waypoint.name == name for waypoint in gpx.waypoints):
          input(f"A waypoint with the name '{name}' already exists. Please choose a different name. Press enter to return.")
          return
      while True:
@@ -192,102 +192,101 @@ def update_waypoint(gpx):
     idx = int(selection) - 1
     waypoint = gpx.waypoints[idx]
 
-    new_name = input("Enter the new name (or press Enter to keep the same): ") or waypoint.name
     while True:
-        try:
-            new_latitude = input("Enter the new latitude (or press Enter to keep the same): ")
-            if new_latitude == "":
-                new_latitude = waypoint.latitude
-            else:
-                new_latitude = float(new_latitude)
-                if new_latitude < -90 or new_latitude > 90:
-                    print("Invalid latitude. Please enter a value between -90 and 90.")
-                    continue
+        cls()
+        print(f"Updating waypoint: {waypoint.name if waypoint.name else 'Unnamed'} (Lat: {waypoint.latitude}, Lon: {waypoint.longitude}, Ele: {waypoint.elevation}, Time: {waypoint.time})")
+        print("1. Name")
+        print("2. Latitude")
+        print("3. Longitude")
+        print("4. Elevation")
+        print("5. Timestamp")
+        print("6. Magvar")
+        print("7. Geoid height")
+        print("8. Comment")
+        print("9. Description")
+        print("10. Source")
+        print("11. Link")
+        print("12. Symbol")
+        print("13. Type")
+        print("14. Fix")
+        print("15. Satellite")
+        print("16. hdop")
+        print("17. vdop")
+        print("18. pdop")
+        print("19. Age of GPS data")
+        print("20. dgpsid")
+        print("0. (or press enter) Finish updating")
+
+        update_choice = input("Please select an option (1-20, 0 to finish): ")
+
+        if update_choice == '0' or update_choice == '':
             break
-        except ValueError:
-            print("Invalid input. Please enter a valid latitude.")
-    while True:
-        try:
-            new_longitude = input("Enter the new longitude (or press Enter to keep the same): ")
-            if new_longitude == "":
-                new_longitude = waypoint.longitude
-            else:
-                new_longitude = float(new_longitude)
-                if new_longitude < -180 or new_longitude > 180:
-                    print("Invalid longitude. Please enter a value between -180 and 180.")
-                    continue
-            break
-        except ValueError:
-            print("Invalid input. Please enter a valid longitude.")
-    while True:
-        try:
-            new_elevation = input("Enter the new elevation (or press Enter to keep the same): ")
-            if new_elevation == "":
-                new_elevation = waypoint.elevation
-            else:
-                new_elevation = float(new_elevation)
-            break
-        except ValueError:
-            print("Invalid input. Please enter a valid elevation.")
-
-    # Update the waypoint attributes
-    waypoint.name = new_name
-    waypoint.latitude = new_latitude
-    waypoint.longitude = new_longitude
-    waypoint.elevation = new_elevation
-
-    # Ask y/n to see further details to update
-    # This section allows the user to update additional details of the waypoint.
-    #It also checks if the user input is valid and handles exceptions for invalid inputs.
-
-
-    print("Do you want to update additional details for this waypoint?")
-    additional_details = input("Please select an option (y/n): ").lower()
-    if additional_details == 'y':
-        print("1. Timestamp")
-        print("2. Magvar")
-        print("3. Geoid height")
-        print("4. Comment")
-        print("5. Description")
-        print("6. Source")
-        print("7. Link")
-        print("8. Symbol")
-        print("9. Type")
-        print("10. Fix")
-        print("11. Satellite")
-        print("12. hdop")
-        print("13. vdop")
-        print("14. pdop")
-        print("15. Age of GPS data")
-        print("16. dgpsid")
-
-        update_choice = input("Please select an option (1-16) or press Enter to skip: ")
-        if update_choice == '1':
+        elif update_choice == '1':
+            new_name = input("Enter the new name (or press Enter to keep the same): ")
+            if new_name:
+                waypoint.name = new_name
+        elif update_choice == '2':
+            while True:
+                new_latitude = input("Enter the new latitude (or press Enter to keep the same): ")
+                if new_latitude == "":
+                    break  # Keep the same
+                try:
+                    new_latitude = float(new_latitude)
+                    if new_latitude < -90 or new_latitude > 90:
+                        print("Invalid latitude. Please enter a value between -90 and 90.")
+                        continue
+                    waypoint.latitude = new_latitude
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid latitude.")
+        elif update_choice == '3':
+            while True:
+                new_longitude = input("Enter the new longitude (or press Enter to keep the same): ")
+                if new_longitude == "":
+                    break  # Keep the same
+                try:
+                    new_longitude = float(new_longitude)
+                    if new_longitude < -180 or new_longitude > 180:
+                        print("Invalid longitude. Please enter a value between -180 and 180.")
+                        continue
+                    waypoint.longitude = new_longitude
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid longitude.")
+        elif update_choice == '4':
+            while True:
+                new_elevation = input("Enter the new elevation (or press Enter to keep the same): ")
+                if new_elevation == "":
+                    break  # Keep the same
+                try:
+                    waypoint.elevation = float(new_elevation)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a valid elevation.")
+        elif update_choice == '5':
             print("Enter the new timestamp for the waypoint.")
             print("Accepted formats:")
             print("  1. YYYY-MM-DDTHH:MM:SSZ (e.g., 2024-06-25T14:30:00Z)")
             print("  2. YYYY-MM-DD HH:MM:SS (e.g., 2024-06-25 14:30:00)")
             print("  3. YYYY-MM-DD (date only, time will be set to 00:00:00)")
-            newtimestamp = input("Enter the new timestamp or press Enter to keep the same: ")
-            if newtimestamp:
+            while True:
+                newtimestamp = input("Enter the new timestamp or press Enter to keep the same: ")
+                if not newtimestamp:
+                    break  # Keep the same
                 try:
-                    # Try parsing ISO format with Z
                     if newtimestamp.endswith("Z"):
                         waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%dT%H:%M:%SZ")
-                    # Try parsing ISO format without Z
                     elif "T" in newtimestamp:
                         waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%dT%H:%M:%S")
-                    # Try parsing with space
                     elif " " in newtimestamp:
                         waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%d %H:%M:%S")
-                    # Try parsing date only
                     else:
                         waypoint.time = datetime.datetime.strptime(newtimestamp, "%Y-%m-%d")
                     print("Timestamp updated successfully.")
+                    break
                 except ValueError:
-                    print("Invalid timestamp format. Please use one of the accepted formats.")
-                    return
-        elif update_choice == '2':
+                    print("Invalid timestamp format. Please use one of the accepted formats above.")
+        elif update_choice == '6':
             while True:
                 new_magvar = input("Enter the new magnetic variation (or press Enter to keep the same): ")
                 if new_magvar == "":
@@ -297,7 +296,7 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        elif update_choice == '3':
+        elif update_choice == '7':
             while True:
                 new_geoid_height = input("Enter the new geoid height (or press Enter to keep the same): ")
                 if new_geoid_height == "":
@@ -307,38 +306,37 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        elif update_choice == '4':
+        elif update_choice == '8':
             new_comment = input("Enter the new comment (or press Enter to keep the same): ")
             if new_comment:
                 waypoint.comment = new_comment
-        elif update_choice == '5':
+        elif update_choice == '9':
             new_description = input("Enter the new description (or press Enter to keep the same): ")
             if new_description:
                 waypoint.description = new_description
-        elif update_choice == '6':
+        elif update_choice == '10':
             new_source = input("Enter the new source (or press Enter to keep the same): ")
             if new_source:
                 waypoint.source = new_source
-        elif update_choice == '7':
+        elif update_choice == '11':
             while True:
                 new_link = input("Enter the new link (or press Enter to keep the same): ")
                 if not new_link:
                     break  # Keep the same
-                # Ensure the link is a valid URL
                 if not (new_link.startswith("http://") or new_link.startswith("https://")):
                     print("Invalid link format. Please enter a valid URL starting with http:// or https://.")
                     continue
                 waypoint.link = [new_link]
                 break
-        elif update_choice == '8':
+        elif update_choice == '12':
             new_symbol = input("Enter the new symbol (or press Enter to keep the same): ")
             if new_symbol:
                 waypoint.symbol = new_symbol
-        elif update_choice == '9':
+        elif update_choice == '13':
             new_type = input("Enter the new type (or press Enter to keep the same): ")
             if new_type:
                 waypoint.type = new_type
-        elif update_choice == '10':
+        elif update_choice == '14':
             valid_fixes = ('none', '2d', '3d', 'dgps', 'pps', '3')
             while True:
                 new_fix = input("Enter the new fix (either 'none', '2d', '3d', 'dgps', 'pps', '3') or press Enter to keep the same: ")
@@ -349,7 +347,7 @@ def update_waypoint(gpx):
                     break
                 else:
                     print("Invalid fix type. Please enter one of the following: 'none', '2d', '3d', 'dgps', 'pps', '3'.")
-        elif update_choice == '11':
+        elif update_choice == '15':
             while True:
                 new_satellite = input("Enter the new satellite (or press Enter to keep the same): ")
                 if new_satellite == "":
@@ -359,7 +357,7 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid integer.")
-        elif update_choice == '12':
+        elif update_choice == '16':
             while True:
                 new_hdop = input("Enter the new hdop (or press Enter to keep the same): ")
                 if new_hdop == "":
@@ -369,7 +367,7 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        elif update_choice == '13':
+        elif update_choice == '17':
             while True:
                 new_vdop = input("Enter the new vdop (or press Enter to keep the same): ")
                 if new_vdop == "":
@@ -379,7 +377,7 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        elif update_choice == '14':
+        elif update_choice == '18':
             while True:
                 new_pdop = input("Enter the new pdop (or press Enter to keep the same): ")
                 if new_pdop == "":
@@ -389,7 +387,7 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        elif update_choice == '15':
+        elif update_choice == '19':
             while True:
                 new_age_of_gps_data = input("Enter the new age of GPS data (or press Enter to keep the same): ")
                 if new_age_of_gps_data == "":
@@ -399,7 +397,7 @@ def update_waypoint(gpx):
                     break
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        elif update_choice == '16':
+        elif update_choice == '20':
             while True:
                 new_dgpsid = input("Enter the new dgpsid (or press Enter to keep the same): ")
                 if new_dgpsid == "":
@@ -411,12 +409,6 @@ def update_waypoint(gpx):
                     print("Invalid input. Please enter a valid integer.")
         else:
             print("No additional details updated or invalid type.")
-    elif additional_details == 'n':
-        print("No additional details updated.")
-    else:
-        print("Invalid selection, please try again.")
-        return
-
     print(f"Waypoint '{waypoint.name}' updated successfully.")
     input("Press Enter to return to the waypoints menu...")
 

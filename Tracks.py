@@ -83,15 +83,8 @@ def add_track(gpx):
         idx = int(selection) - 1
         waypoint = gpx.waypoints[idx]
 
-        # Create a new GPXTrackPoint from the waypoint's data
-
-        track_point = gpxpy.gpx.GPXTrackPoint(
-            latitude=waypoint.latitude,
-            longitude=waypoint.longitude,
-            elevation=waypoint.elevation,
-            name=waypoint.name
-        )
-        segment.points.append(track_point)
+       
+        segment.points.append(waypoint)
         print(f"Waypoint '{waypoint.name}' added to Track '{track_name}' successfully.")
 
     if not segment.points:
