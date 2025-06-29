@@ -35,8 +35,8 @@ def print_tracks(gpx):
     # It displays the name of each track, the number of segments, and the points in each segment.
     cls()
     if gpx.tracks:
-        for track in gpx.tracks:
-            print(f"Name: {track.name}, Number of Segments: {len(track.segments)}")
+        for idx, track in enumerate(gpx.tracks, start=1):
+            print(f"{idx}. Name: {track.name}, Number of Segments: {len(track.segments)}")
             for segment_idx, segment in enumerate(track.segments):
                 print(f"  Segment {segment_idx + 1}, Number of Points: {len(segment.points)}")
                 for point in segment.points:
@@ -101,7 +101,7 @@ def add_track(gpx):
 
 def delete_track(gpx):
     # Allows the user to delete a track from the GPX file.
-    # It lists all available tracks and prompts the user to select one for deletion.
+    # It lists all available tracks and prompts the user to select one for deletion by number.
     cls()
     if not gpx.tracks:
         print("No tracks available to delete.")
@@ -109,24 +109,22 @@ def delete_track(gpx):
         return
 
     print("Available Tracks:")
-    for track in gpx.tracks:
-        print(f"- {track.name}")
-    
-    track_name = input("Enter the track name to delete (or type 'cancel' to cancel): ")
-    if track_name.lower() == 'cancel':
+    for idx, track in enumerate(gpx.tracks, start=1):
+        print(f"{idx}. {track.name}")
+    selection = input("Enter the number of the track to delete (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
         print("Deletion cancelled.")
         input("Press Enter to return to the tracks menu...")
         return
-
-    for track in gpx.tracks:
-        if track.name == track_name:
-            gpx.tracks.remove(track)
-            print(f"Track '{track_name}' deleted successfully.")
-            input("Press Enter to return to the tracks menu...")
-            return
-
-    print(f"Track '{track_name}' not found.")
+    if not selection.isdigit() or not (1 <= int(selection) <= len(gpx.tracks)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the tracks menu...")
+        return
+    idx = int(selection) - 1
+    track = gpx.tracks.pop(idx)
+    print(f"Track '{track.name}' deleted successfully.")
     input("Press Enter to return to the tracks menu...")
+
 
 def update_track(gpx):
     # Allows the user to update an existing track in the GPX file.
@@ -139,21 +137,19 @@ def update_track(gpx):
         return
 
     print("Available Tracks:")
-    for track in gpx.tracks:
-        print(f"- {track.name}")
-    
-    update_track_name = input("Enter the name of the track you want to update: ")
-    
-    selected_track = None
-    for track in gpx.tracks:
-        if track.name == update_track_name:
-            selected_track = track
-            break
-    
-    if selected_track is None:
-        print(f"Track '{update_track_name}' not found.")
+    for idx, track in enumerate(gpx.tracks, start=1):
+        print(f"{idx}. {track.name}")
+    selection = input("Enter the number of the track you want to update (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
+        print("Update cancelled.")
         input("Press Enter to return to the tracks menu...")
         return
+    if not selection.isdigit() or not (1 <= int(selection) <= len(gpx.tracks)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the tracks menu...")
+        return
+    idx = int(selection) - 1
+    selected_track = gpx.tracks[idx]
 
     while True:
         cls()
