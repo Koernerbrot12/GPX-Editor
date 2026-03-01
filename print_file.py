@@ -6,7 +6,7 @@ from commands import cls
 
 def converter_function(file_or_gpx):
 
-    #The creation of PDF files works with the fpdf Library
+    # The creation of PDF files works with the fpdf Library
 
     # checking if the file is a string or a already parsed object
 
