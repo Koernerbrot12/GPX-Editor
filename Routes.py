@@ -36,16 +36,16 @@ def routes_menu(gpx):
 
 def print_routes(gpx):
     cls()
-    # This function prints all routes in the GPX file.
+    # This function prints all routes in the GPX file, numbered.
     if gpx.routes:
-        for route in gpx.routes:
-            print(f"Name: {route.name}, Number of Points: {len(route.points)}")
+        for idx, route in enumerate(gpx.routes, start=1):
+            print(f"{idx}. Name: {route.name}, Number of Points: {len(route.points)}")
             for point in route.points:
                 print(f"- {point.name} (Latitude: {point.latitude}, Longitude: {point.longitude}, Elevation: {point.elevation})")
     else:
         print("No routes found in the GPX file.")
-    
     input("Press Enter to return to the routes menu...")
+
 
 def add_route(gpx):
     
@@ -99,24 +99,22 @@ def delete_route(gpx):
         return
 
     print("Available Routes:")
-    for route in gpx.routes:
-        print(f"- {route.name}")
-    print("Type the name of the route you want to delete (or type 'cancel' to cancel): ")
-    route_name = input("Enter the route name: ")
-    if route_name.lower() == 'cancel':
+    for idx, route in enumerate(gpx.routes, start=1):
+        print(f"{idx}. {route.name}")
+    selection = input("Enter the number of the route to delete (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
         print("Deletion cancelled.")
         input("Press Enter to return to the routes menu...")
         return
-    for route in gpx.routes:
-        if route.name == route_name:
-            gpx.routes.remove(route)
-            print(f"Route '{route_name}' deleted successfully.")
-            input("Press Enter to return to the routes menu...")
-            return
-        
-   
-
+    if not selection.isdigit() or not (1 <= int(selection) <= len(gpx.routes)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the routes menu...")
+        return
+    idx = int(selection) - 1
+    route = gpx.routes.pop(idx)
+    print(f"Route '{route.name}' deleted successfully.")
     input("Press Enter to return to the routes menu...")
+
 
 def update_route(gpx):
     cls()
@@ -126,22 +124,19 @@ def update_route(gpx):
         return
 
     print("Available Routes:")
-    for route in gpx.routes:
-        print(f"- {route.name}")
-    
-    update_route_name = input("Enter the name of the route you want to update: ")
-    
-    # Find the selected route
-    selected_route = None
-    for route in gpx.routes:
-        if route.name == update_route_name:
-            selected_route = route
-            break
-    
-    if selected_route is None:
-        print(f"Route '{update_route_name}' not found.")
+    for idx, route in enumerate(gpx.routes, start=1):
+        print(f"{idx}. {route.name}")
+    selection = input("Enter the number of the route you want to update (or type 'cancel' to cancel): ")
+    if selection.lower() == 'cancel':
+        print("Update cancelled.")
         input("Press Enter to return to the routes menu...")
         return
+    if not selection.isdigit() or not (1 <= int(selection) <= len(gpx.routes)):
+        print("Invalid selection. Please enter a valid number.")
+        input("Press Enter to return to the routes menu...")
+        return
+    idx = int(selection) - 1
+    selected_route = gpx.routes[idx]
 
     while True:
         cls()
@@ -305,5 +300,5 @@ def delete_route_point(gpx, route):
     point = route.points.pop(idx)
     print(f"Point '{point.name}' deleted successfully.")
 
-    input("Press Enter to return to the update menu...")   
+    input("Press Enter to return to the update menu...")
 

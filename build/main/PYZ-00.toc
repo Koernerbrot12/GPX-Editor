@@ -1020,6 +1020,10 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\lzma.py',
    'PYMODULE'),
+  ('main',
+   'C:\\Users\\albre\\Documents\\4. Semester\\Software '
+   'Engineering\\GPX-Editor\\main.py',
+   'PYMODULE'),
   ('markupsafe',
    'c:\\Users\\albre\\Documents\\4. Semester\\Software '
    'Engineering\\GPX-Editor\\.venv\\Lib\\site-packages\\markupsafe\\__init__.py',
